@@ -5,6 +5,8 @@
   </div>
 </template>
 
+<script setup lang="ts"></script>
+
 <style lang="postcss">
   .test {
     @apply bg-red-500 text-2xl;
