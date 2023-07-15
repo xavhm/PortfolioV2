@@ -5,6 +5,7 @@ module.exports = {
     sourceType: 'module',
   },
   extends: ['@nuxt/eslint-config-typescript', 'plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
+  plugins: ['prettier'],
   rules: {
     'vue/max-attributes-per-line': 'on',
     'vue/multi-word-component-names': 'on',
