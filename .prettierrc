@@ -4,7 +4,9 @@
   "singleQuote": true,
   "printWidth": 120,
   "arrowParens": "always",
+  "bracketSpacing": true,
   "useTabs": false,
   "tabWidth": 2,
-  "htmlWhitespaceSensitivity": "ignore"
+  "htmlWhitespaceSensitivity": "ignore",
+  "vueIndentScriptAndStyle": false
 }
