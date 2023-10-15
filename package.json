@@ -13,6 +13,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.15",
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/fontaine": "^0.4.1",
     "@types/node": "^20.6.0",
     "autoprefixer": "^10.4.15",
     "eslint": "^8.49.0",

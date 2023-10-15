@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+  src: url('/fonts/inter-latin-200-normal.woff2') format('woff2');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+  src: url('/fonts/inter-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+  src: url('/fonts/inter-latin-700-normal.woff2') format('woff2');
+  font-weight: 700;
+}
+
 :root {
   font-size: 16px;
   font-synthesis: none;
@@ -21,4 +42,11 @@
 
 body {
   min-height: 100dvh;
+  font-family: 'Inter';
+}
+
+@supports (text-wrap: balance) {
+  body {
+    text-wrap: balance;
+  }
 }
