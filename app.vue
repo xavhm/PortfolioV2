@@ -7,7 +7,7 @@
 
 <script setup lang="ts"></script>
 
-<style lang="postcss">
+<style lang="postcss" scoped>
 .test {
   @apply bg-red-500 text-2xl;
 }
