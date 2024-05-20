@@ -1,11 +1,14 @@
 <template>
   <div>
     <h1 class="flex justify-center test">Test</h1>
+    <SVGSignature />
     <NuxtWelcome />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SVGSignature from './components/SVGSignature.vue';
+</script>
 
 <style lang="postcss" scoped>
 .test {
