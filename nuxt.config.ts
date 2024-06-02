@@ -12,5 +12,5 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
-  modules: ['@nuxtjs/fontaine'],
+  modules: [],
 });
