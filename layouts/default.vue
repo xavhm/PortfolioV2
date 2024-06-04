@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full min-h-[100dvh] mx-auto max-w-5xl" aria-hidden="true">
+  <div class="w-full min-h-[100dvh] mx-auto max-w-5xl">
     <Header />
   </div>
 </template>

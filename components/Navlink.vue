@@ -7,7 +7,6 @@
   >
     <span
       class="w-fit text-red-500 motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:translate-y-full"
-      aria-hidden="true"
     >
       {{ props.label }}
     </span>
