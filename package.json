@@ -1,6 +1,12 @@
 {
   "name": "xav_portfolio_v2",
   "private": true,
+  "packageManager": "pnpm@9.1.4",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xavhm/PortfolioV2t"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",

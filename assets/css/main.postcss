@@ -9,6 +9,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --background-gray: #f8f9fa;
 }
 
 *,
@@ -21,7 +22,8 @@
 
 body {
   min-height: 100dvh;
-  font-family: 'Satoshi';
+  font-family: 'Satoshi', sans-serif;
+  background-color: var(--background-gray);
 }
 
 @supports (text-wrap: balance) {

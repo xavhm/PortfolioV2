@@ -12,5 +12,11 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
-  modules: ["@nuxt/fonts"],
+  modules: ['@nuxt/fonts'],
+  fonts: {
+    defaults: {
+      weights: [400, 500, 700, 900],
+      styles: ['normal', 'italic'],
+    },
+  },
 });
