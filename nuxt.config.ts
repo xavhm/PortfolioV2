@@ -12,7 +12,10 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
-  modules: ['@nuxt/fonts'],
+  modules: ['@nuxt/fonts', '@nuxtjs/color-mode'],
+  colorMode: {
+    classSuffix: '',
+  },
   fonts: {
     defaults: {
       weights: [400, 500, 700, 900],
