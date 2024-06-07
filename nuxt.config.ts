@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  //@ts-ignore
   css: ['@/assets/css/main.postcss'],
   postcss: {
     plugins: {
@@ -12,9 +11,14 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
-  modules: ['@nuxt/fonts', '@nuxtjs/color-mode'],
+  modules: ['@nuxt/fonts', '@nuxtjs/color-mode', "@nuxt/eslint"],
   devtools: {
     enabled: true,
+  },
+  eslint: {
+    config: {
+      stylistic: true,
+    }
   },
   experimental: {
     typedPages: true,

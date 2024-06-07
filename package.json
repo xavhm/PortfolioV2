@@ -14,10 +14,11 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.6",
+    "@nuxt/eslint": "^0.3.13",
     "@nuxt/fonts": "^0.7.0",
     "@nuxtjs/color-mode": "^3.4.1",
     "@types/node": "^20.13.0",
