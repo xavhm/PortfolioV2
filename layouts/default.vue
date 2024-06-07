@@ -1,5 +1,6 @@
 <template>
   <div class="w-full min-h-[100dvh] mx-auto max-w-5xl">
-    <Header />
+    <TheHeader />
+    <slot />
   </div>
 </template>

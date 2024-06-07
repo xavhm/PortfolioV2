@@ -11,14 +11,14 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
-  modules: ['@nuxt/fonts', '@nuxtjs/color-mode', "@nuxt/eslint"],
+  modules: ['@nuxt/fonts', '@nuxtjs/color-mode', '@nuxt/eslint'],
   devtools: {
     enabled: true,
   },
   eslint: {
     config: {
       stylistic: true,
-    }
+    },
   },
   experimental: {
     typedPages: true,
@@ -33,4 +33,4 @@ export default defineNuxtConfig({
       styles: ['normal', 'italic'],
     },
   },
-});
+})

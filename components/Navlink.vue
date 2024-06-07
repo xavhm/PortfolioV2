@@ -20,11 +20,9 @@
 </template>
 
 <script setup lang="ts">
-import type { RouteRecordRaw } from '#vue-router';
-
 const props = defineProps<{
-  label: string;
-  target?: string | undefined; // use for anchor only
-  href?: RouteRecordRaw | undefined;
-}>();
+  label: string
+  target?: string | undefined // use for anchor only
+  href?: string | undefined
+}>()
 </script>
