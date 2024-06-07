@@ -13,6 +13,13 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   modules: ['@nuxt/fonts', '@nuxtjs/color-mode'],
+  devtools: {
+    enabled: true,
+  },
+  experimental: {
+    typedPages: true,
+    viewTransition: true,
+  },
   colorMode: {
     classSuffix: '',
   },
