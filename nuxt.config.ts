@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
-  modules: ['@nuxt/fonts', '@nuxtjs/color-mode', '@nuxt/eslint'],
+  modules: ['@nuxt/fonts', '@nuxtjs/color-mode', '@nuxt/eslint', '@nuxt/image'],
   devtools: {
     enabled: true,
   },

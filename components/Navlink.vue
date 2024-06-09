@@ -6,12 +6,12 @@
     :arial-label="`navigation vers la page ${props.label}`"
   >
     <span
-      class="w-fit text-red-500 motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:translate-y-full"
+      class="w-fit text-slate-500 motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:translate-y-full"
     >
       {{ props.label }}
     </span>
     <span
-      class="absolute text-blue-500 left-0 w-fit translate-y-[-100%] motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:translate-y-[0%]"
+      class="absolute text-black left-0 w-fit translate-y-[-100%] motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:translate-y-[0%]"
       aria-hidden="true"
     >
       {{ props.label }}
