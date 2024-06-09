@@ -2,7 +2,7 @@
   <header class="w-full flex items-start justify-between mt-10">
     <section
       class="flex items-start gap-4"
-      aria-label="profil desription"
+      aria-label="description profil"
     >
       <NuxtImg
         preload
@@ -10,6 +10,7 @@
         format="webp"
         width="40px"
         height="40px"
+        alt="profil"
         class="rounded-full aspect-square object-center my-auto"
       />
       <div class="flex flex-col items-start justify-between">
