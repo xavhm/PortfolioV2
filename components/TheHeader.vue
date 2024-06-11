@@ -6,7 +6,7 @@
     >
       <NuxtImg
         preload
-        src="/DaftpunkPersoIA(1).jpg"
+        src="/profil_black_and_white.jpeg"
         format="webp"
         width="40px"
         height="40px"
@@ -22,9 +22,24 @@
     </section>
     <nav>
       <ul class="flex items-center gap-4">
-        <li><NavLink label="home" /></li>
-        <li><NavLink label="works" /></li>
-        <li><NavLink label="ressources" /></li>
+        <li>
+          <NavLink
+            label="home"
+            href="/"
+          />
+        </li>
+        <li>
+          <NavLink
+            label="works"
+            href="/works"
+          />
+        </li>
+        <li>
+          <NavLink
+            label="ressources"
+            href="/ressources"
+          />
+        </li>
       </ul>
     </nav>
   </header>
