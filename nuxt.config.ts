@@ -11,7 +11,13 @@ export default defineNuxtConfig({
     strict: true,
     typeCheck: true,
   },
-  modules: ['@nuxt/fonts', '@nuxtjs/color-mode', '@nuxt/eslint', '@nuxt/image'],
+  modules: [
+    '@nuxt/fonts',
+    '@nuxtjs/color-mode',
+    '@nuxt/eslint',
+    '@nuxt/image',
+    '@nuxtjs/i18n',
+  ],
   devtools: {
     enabled: true,
   },
@@ -32,5 +38,8 @@ export default defineNuxtConfig({
       weights: [300, 301, 400, 401, 500, 501, 700, 701, 900],
       styles: ['normal', 'italic'],
     },
+  },
+  i18n: {
+    vueI18n: './i18n.config.ts',
   },
 })
