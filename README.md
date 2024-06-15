@@ -1,6 +1,20 @@
-# Updated and minimal personal portfolio.
+# Minimal personal portfolio.
+
+Minimal portfolio project with Nuxt3, Nuxt modules, TailwindCSS.
+Build for SSG.
+Deployed on Cloudflare.
 
 Node 18.11.0
+Pnpm 9.3.0
+Nuxt 3.12.1
+
+List of Nuxt modules:
+
+- @nuxt/fonts,
+- @nuxtjs/color-mode,
+- @nuxt/eslint,
+- @nuxt/image,
+- @nuxtjs/i18n,
 
 ## Nuxt 3 Minimal Starter
 
@@ -34,7 +48,11 @@ npm run dev
 Build the application for production:
 
 ```bash
+# SSR
 npm run build
+
+# SSG
+npm run generate
 ```
 
 Locally preview production build:
