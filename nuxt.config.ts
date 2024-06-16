@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxtjs/i18n',
+    'nuxt-icon',
   ],
   devtools: {
     enabled: true,

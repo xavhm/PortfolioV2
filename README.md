@@ -15,6 +15,7 @@ List of Nuxt modules:
 - @nuxt/eslint,
 - @nuxt/image,
 - @nuxtjs/i18n,
+- nuxt/icons (Lucide set)
 
 ## Nuxt 3 Minimal Starter
 
