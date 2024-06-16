@@ -6,7 +6,7 @@ Deployed on Cloudflare.
 
 Node 18.11.0
 Pnpm 9.3.0
-Nuxt 3.12.1
+Nuxt 3.12.2
 
 List of Nuxt modules:
 
