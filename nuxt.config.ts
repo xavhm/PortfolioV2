@@ -50,10 +50,6 @@ export default defineNuxtConfig({
     locales: ['en', 'fr'],
     defaultLocale: 'en',
     strategy: 'prefix_except_default',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_xav_portfolio',
-      redirectOn: 'root', // recommended
-    },
+    detectBrowserLanguage: false,
   },
 })

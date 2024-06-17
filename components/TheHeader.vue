@@ -1,6 +1,3 @@
-import NavItem from './NavItem.vue';
-import NavItem from './NavItem.vue';
-import NavItem from './NavItem.vue';
 <template>
   <header class="w-full flex flex-col sm:flex-row items-start justify-between mt-10">
     <section
