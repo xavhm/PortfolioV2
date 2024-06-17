@@ -27,28 +27,28 @@
     <nav>
       <ul class="flex items-center gap-4">
         <li>
-          <NuxtClient>
+          <ClientOnly>
             <NavLink
               label="home"
               route="/"
             />
-          </NuxtClient>
+          </ClientOnly>
         </li>
         <li>
-          <NuxtClient>
+          <ClientOnly>
             <NavLink
               label="works"
               route="/works"
             />
-          </NuxtClient>
+          </ClientOnly>
         </li>
         <li>
-          <NuxtClient>
+          <ClientOnly>
             <NavLink
               label="ressources"
               route="/ressources"
             />
-          </NuxtClient>
+          </ClientOnly>
         </li>
       </ul>
     </nav>
