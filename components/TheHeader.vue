@@ -11,13 +11,17 @@
         width="40px"
         height="40px"
         alt="profil"
-        class="rounded-full aspect-square object-center my-auto"
+        class="rounded-full aspect-square object-top my-auto"
       />
       <div class="flex flex-col items-start justify-between">
         <h2 class="font-bold text-sky-900">
           Xavier Hernandez
         </h2>
         <h3>Frontend Engineer</h3>
+        <div class="flex items-center gap-2">
+          <ColorSelector />
+          <LanguageSelector />
+        </div>
       </div>
     </section>
     <nav>
@@ -25,19 +29,19 @@
         <li>
           <NavLink
             label="home"
-            href="/"
+            route="/"
           />
         </li>
         <li>
           <NavLink
             label="works"
-            href="/works"
+            route="/works"
           />
         </li>
         <li>
           <NavLink
             label="ressources"
-            href="/ressources"
+            route="/ressources"
           />
         </li>
       </ul>

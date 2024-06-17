@@ -1,8 +1,7 @@
 <template>
   <NuxtLink
     class="relative flex h-min overflow-hidden group cursor-pointer"
-    :href="props.href"
-    :target="props.target"
+    :to="localePath(props.route)"
     :arial-label="`navigation vers la page ${props.label}`"
   >
     <span
@@ -22,7 +21,8 @@
 <script setup lang="ts">
 const props = defineProps<{
   label: string
-  target?: string | undefined // use for anchor only
-  href?: string | undefined
+  route: string
 }>()
+
+const localePath = useLocalePath()
 </script>
