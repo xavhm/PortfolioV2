@@ -1,3 +1,6 @@
+import NavItem from './NavItem.vue';
+import NavItem from './NavItem.vue';
+import NavItem from './NavItem.vue';
 <template>
   <header class="w-full flex flex-col sm:flex-row items-start justify-between mt-10">
     <section
@@ -27,34 +30,24 @@
     <nav>
       <ul class="flex items-center gap-4">
         <li>
-          <ClientOnly>
-            <NavLink
-              label="home"
-              route="/"
-            />
-          </ClientOnly>
+          <NavItem
+            label="home"
+            route="/"
+          />
         </li>
         <li>
-          <ClientOnly>
-            <NavLink
-              label="works"
-              route="/works"
-            />
-          </ClientOnly>
+          <NavItem
+            label="works"
+            route="/works"
+          />
         </li>
         <li>
-          <ClientOnly>
-            <NavLink
-              label="ressources"
-              route="/ressources"
-            />
-          </ClientOnly>
+          <NavItem
+            label="ressources"
+            route="/ressources"
+          />
         </li>
       </ul>
     </nav>
   </header>
 </template>
-
-<script setup lang="ts">
-import NavLink from './NavLink.vue'
-</script>
