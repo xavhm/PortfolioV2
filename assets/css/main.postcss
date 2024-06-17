@@ -27,13 +27,13 @@ body {
 }
 
 @supports (text-wrap: balance) {
-  is: (h1, h2, h3, h4, h5, h6) {
+  :is(h1, h2, h3, h4, h5, h6) {
     text-wrap: balance;
   }
 }
 
 @supports (text-wrap: pretty) {
-  is: (p, div) {
+  :is(p, div) {
     text-wrap: pretty;
   }
 }
