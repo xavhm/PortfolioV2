@@ -1,21 +1,23 @@
 <template>
   <button
     type="button"
-    class="relative flex items-center overflow-hidden cursor-pointer border border-slate-300 rounded p-1"
+    class="relative flex items-center w-[26px] aspect-square overflow-hidden cursor-pointer border border-slate-300 rounded p-1"
     arial-label="selecteur du mode de couleur"
     @click="$colorMode.preference === 'light' ? $colorMode.preference = 'dark' : $colorMode.preference = 'light'"
   >
     <Icon
-      class="min-w-fit motion-safe:transition-transform motion-safe:duration-500"
+      class="motion-safe:transition-transform motion-safe:duration-500"
       :class="{ 'motion-safe:translate-y-[130%]': $colorMode.value === 'dark' }"
       name="lucide:sun"
       color="#3b0764"
+      size="20px"
     />
     <Icon
-      class="min-w-fit absolute left-1 motion-safe:translate-y-[-130%] motion-safe:transition-transform motion-safe:duration-500"
+      class="absolute left-[3px] motion-safe:translate-y-[-130%] motion-safe:transition-transform motion-safe:duration-500"
       :class="{ 'motion-safe:translate-y-[0]': $colorMode.value === 'dark' }"
       name="lucide:moon"
       color="#3b0764"
+      size="18px"
     />
   </button>
 </template>
