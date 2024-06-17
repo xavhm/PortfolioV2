@@ -22,6 +22,11 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false,
+    },
+  },
   eslint: {
     config: {
       stylistic: true,
