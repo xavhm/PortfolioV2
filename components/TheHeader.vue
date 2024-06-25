@@ -6,8 +6,8 @@
     >
       <NuxtImg
         preload
-        src="/profil_black_and_white.jpeg"
-        format="webp"
+        src="/iatoon_avatar.jpg"
+        format="avif"
         width="40px"
         height="40px"
         alt="profil"
