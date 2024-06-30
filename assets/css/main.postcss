@@ -2,14 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+html {
   font-size: 16px;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --background-gray: #f8f9fa;
+  --background: hsl(15, 20%, 92%);
+}
+
+html.dark {
+  --background: hsl(300, 60%, 4%);
 }
 
 *,
@@ -23,8 +27,9 @@
 body {
   min-height: 100dvh;
   font-family: 'Satoshi', sans-serif;
-  background-color: var(--background-gray);
+  background-color: var(--background);
 }
+
 
 @supports (text-wrap: balance) {
   :is(h1, h2, h3, h4, h5, h6) {

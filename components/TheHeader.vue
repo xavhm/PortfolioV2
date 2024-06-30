@@ -20,11 +20,12 @@
         <h3>Frontend Engineer</h3>
       </div>
     </section>
-    <section aria-label="display settings">
-      <div class="flex items-center gap-2">
-        <ColorSelector />
-        <LanguageSelector />
-      </div>
+    <section
+      class="flex items-center gap-2"
+      aria-label="display settings"
+    >
+      <ColorSelector />
+      <LanguageSelector />
     </section>
     <nav>
       <ul class="flex items-center gap-4">
