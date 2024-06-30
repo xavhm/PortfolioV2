@@ -2,7 +2,8 @@
   <button
     type="button"
     class="relative flex items-center w-[26px] aspect-square overflow-hidden cursor-pointer border border-slate-300 rounded p-1"
-    arial-label="selecteur du mode de couleur"
+    arial-label="display pages with dark mode"
+    :aria-pressed="$colorMode.preference === 'light' ? false : true"
     @click="$colorMode.preference === 'light' ? $colorMode.preference = 'dark' : $colorMode.preference = 'light'"
   >
     <Icon

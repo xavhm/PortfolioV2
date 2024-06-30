@@ -2,7 +2,7 @@
   <header class="w-full flex flex-col sm:flex-row items-start justify-between mt-10">
     <section
       class="flex items-start gap-4 mb-4"
-      aria-label="description profil"
+      aria-label="profile description"
     >
       <NuxtImg
         preload
@@ -10,7 +10,7 @@
         format="avif"
         width="40px"
         height="40px"
-        alt="profil"
+        alt="avatar"
         class="rounded-full aspect-square object-top my-auto"
       />
       <div class="flex flex-col items-start justify-between">
@@ -18,10 +18,12 @@
           Xavier Hernandez
         </h2>
         <h3>Frontend Engineer</h3>
-        <div class="flex items-center gap-2">
-          <ColorSelector />
-          <LanguageSelector />
-        </div>
+      </div>
+    </section>
+    <section aria-label="display settings">
+      <div class="flex items-center gap-2">
+        <ColorSelector />
+        <LanguageSelector />
       </div>
     </section>
     <nav>

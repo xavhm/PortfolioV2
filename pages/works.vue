@@ -1,5 +1,5 @@
 <template>
-  <div class="dark:text-red-500">
+  <main class="dark:text-red-500">
     {{ $t('work') }}
-  </div>
+  </main>
 </template>

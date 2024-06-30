@@ -2,7 +2,7 @@
   <NuxtLink
     class="relative flex h-min overflow-hidden group cursor-pointer"
     :to="localePath(props.route)"
-    :arial-label="`navigation vers la page ${props.label}`"
+    :arial-label="`navigation to ${props.label} page`"
   >
     <span
       class="w-fit text-black motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:translate-y-full"
