@@ -9,11 +9,14 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --background: hsl(15, 20%, 92%);
+
+  --lightgray: oklch(97.02% 0 102.07);
+  --darkpurple: #3b0764;
+  --background: var(--lightgray);
 }
 
 html.dark {
-  --background: hsl(300, 60%, 4%);
+  --background: var(--darkpurple);
 }
 
 *,
@@ -30,6 +33,11 @@ body {
   background-color: var(--background);
 }
 
+.gradient-border {
+  border-width: 1px;
+  border-style: solid;
+  border-image: var(--gradient) 1;
+}
 
 @supports (text-wrap: balance) {
   :is(h1, h2, h3, h4, h5, h6) {
