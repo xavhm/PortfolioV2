@@ -9,7 +9,11 @@ module.exports = {
   ],
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        darkpurple: 'oklch(29.29% 0.059 317.72)',
+      },
+    },
   },
   plugins: [],
 }

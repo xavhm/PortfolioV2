@@ -11,13 +11,15 @@
         width="40px"
         height="40px"
         alt="avatar"
-        class="rounded-full aspect-square object-top my-auto"
+        class="rounded-full aspect-square object-top my-auto border border-transparent dark:border-white"
       />
       <div class="flex flex-col items-start justify-between">
-        <h2 class="font-bold text-sky-900">
+        <h2 class="font-bold text-sky-900 dark:text-white">
           Xavier Hernandez
         </h2>
-        <h3>Frontend Engineer</h3>
+        <h3 class="text-sky-900 dark:text-white">
+          Frontend Engineer
+        </h3>
       </div>
     </section>
     <section
