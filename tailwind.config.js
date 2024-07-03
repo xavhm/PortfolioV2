@@ -11,7 +11,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        darkpurple: 'oklch(29.29% 0.059 317.72)',
+        lightgray: 'var(--lightgray)',
+        darkgray: 'var(--darkgray)',
+        lightpurple: 'var(--lightpurple)',
+        mediumpurple: 'var(--mediumpurple)',
+        darkpurple: 'var(--darkpurple)',
       },
     },
   },

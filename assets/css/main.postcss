@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn {
+    @apply relative flex items-center justify-center w-[32px] aspect-square overflow-hidden bg-gradient-to-b from-lightgray dark:from-lightpurple to-darkgray dark:to-mediumpurple border border-neutral-300 dark:border-darkpurple hover:border-neutral-400 dark:hover:border-lightpurple rounded cursor-pointer focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple;
+  }
+}
+
 html {
   font-size: 16px;
   font-synthesis: none;
@@ -10,8 +16,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  --lightgray: oklch(97.02% 0 102.07);
-  --darkpurple: oklch(29.29% 0.059 317.72);
+  --lightgray: oklch(97.06% 0.002 67.8);
+  --darkgray: oklch(91.05% 0.005 78.3);
+  --lightpurple: oklch(41.06% 0.091 318.38);
+  --mediumpurple: oklch(29.29% 0.059 317.72);
+  --darkpurple: oklch(18.38% 0.03 318.24);
+
   --background: var(--lightgray);
 }
 
@@ -31,12 +41,6 @@ body {
   min-height: 100dvh;
   font-family: 'Satoshi', sans-serif;
   background-color: var(--background);
-}
-
-.gradient-border {
-  border-width: 1px;
-  border-style: solid;
-  border-image: var(--gradient) 1;
 }
 
 @supports (text-wrap: balance) {

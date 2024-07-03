@@ -11,13 +11,13 @@
         width="40px"
         height="40px"
         alt="avatar"
-        class="rounded-full aspect-square object-top my-auto border border-transparent dark:border-white"
+        class="rounded-full aspect-square object-top my-auto border border-lightpurple dark:border-lightpurple"
       />
       <div class="flex flex-col items-start justify-between">
-        <h2 class="font-bold text-sky-900 dark:text-white">
+        <h2 class="font-bold text-lightpurple dark:text-lightgray">
           Xavier Hernandez
         </h2>
-        <h3 class="text-sky-900 dark:text-white">
+        <h3 class="text-lightpurple dark:text-lightgray">
           Frontend Engineer
         </h3>
       </div>
