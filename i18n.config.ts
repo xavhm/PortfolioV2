@@ -8,12 +8,16 @@ export default defineI18nConfig(() => ({
       content: 'Content',
       work: 'Work',
       ressources: 'Ressources',
+      color_selector: 'Color mode selector',
+      language_selector: 'Language selector',
     },
     fr: {
       welcome: 'Bienvenue',
       content: 'Contenu',
       work: 'Projets',
       ressources: 'Références',
+      color_selector: 'Sélection du mode d\'affichage',
+      language_selector: 'Sélection de la langue',
     },
   },
 }))

@@ -2,7 +2,7 @@
   <button
     type="button"
     class="btn p-1"
-    title="Color mode selector"
+    :title="$t('color_selector')"
     arial-label="display pages with dark mode"
     :aria-pressed="$colorMode.preference === 'light' ? false : true"
     @click="$colorMode.preference === 'light' ? $colorMode.preference = 'dark' : $colorMode.preference = 'light'"
@@ -16,7 +16,7 @@
     />
     <Icon
       class="absolute translate-y-[-140%] motion-safe:transition-transform motion-safe:duration-500"
-      :class="{ 'translate-y-0': $colorMode.value === 'dark' }"
+      :class="{ 'translate-y-[0]': $colorMode.value === 'dark' }"
       name="lucide:moon"
       :color="$colorMode.value === 'dark' ? '#FFF' : '#3b0764'"
       size="16px"

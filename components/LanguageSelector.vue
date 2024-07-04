@@ -2,7 +2,7 @@
   <button
     type="button"
     class="btn"
-    title="Language selector"
+    :title="$t('language_selector')"
     arial-label="display content in french"
     :aria-pressed="locale === 'en' ? false : true"
     @click="locale === 'en' ? setLocale('fr') : setLocale('en')"
