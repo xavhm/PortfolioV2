@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full grid grid-rows-[min-content_auto_min-content] min-h-[100dvh] mx-auto max-w-3xl px-2 dark:text-red">
+  <div class="w-full grid grid-rows-[min-content_auto_min-content] min-h-[100dvh] mx-auto max-w-3xl px-2 dark:text-red radial_gradient">
     <TheHeader />
     <slot />
     <TheFooter />

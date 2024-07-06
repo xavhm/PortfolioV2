@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="btn"
+    class="slide_btn"
     :title="$t('language_selector')"
     arial-label="display content in french"
     :aria-pressed="locale === 'en' ? false : true"

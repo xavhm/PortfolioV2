@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  .btn {
+  .slide_btn {
     @apply relative flex items-center justify-center w-[32px] aspect-square overflow-hidden bg-gradient-to-b from-lightgray dark:from-lightpurple to-darkgray dark:to-mediumpurple border border-neutral-300 dark:border-darkpurple hover:border-neutral-400 dark:hover:border-lightpurple rounded cursor-pointer focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple;
   }
 }
@@ -21,12 +21,16 @@ html {
   --lightpurple: oklch(41.06% 0.091 318.38);
   --mediumpurple: oklch(29.29% 0.059 317.72);
   --darkpurple: oklch(18.38% 0.03 318.24);
-
-  --background: var(--lightgray);
 }
 
 html.dark {
-  --background: var(--darkpurple);
+  body {
+    background-image: 
+      radial-gradient(
+        farthest-corner circle at 50% 0% in oklab,
+        var(--darkpurple) 0%, var(--mediumpurple) 100%
+      );
+  }
 }
 
 *,
@@ -40,7 +44,11 @@ html.dark {
 body {
   min-height: 100dvh;
   font-family: 'Satoshi', sans-serif;
-  background-color: var(--background);
+  background-image: 
+    radial-gradient(
+      farthest-corner circle at 50% 0% in oklab,
+      oklch(100% 0.00 68) 0%, oklch(89% 0.00 68) 100%
+    );
 }
 
 @supports (text-wrap: balance) {
