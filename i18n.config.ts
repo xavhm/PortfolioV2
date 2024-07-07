@@ -8,6 +8,7 @@ export default defineI18nConfig(() => ({
       ressources: 'Ressources',
       color_selector: 'Color mode selector',
       language_selector: 'Language selector',
+      email: 'Copy Email address',
       about: {
         hello: 'Hey 🖖,',
         part1: 'I am a frontend engineer with a ',
@@ -28,6 +29,7 @@ export default defineI18nConfig(() => ({
       ressources: 'Références',
       color_selector: 'Sélection du mode d\'affichage',
       language_selector: 'Sélection de la langue',
+      email: 'Copier adresse email',
       about: {
         hello: 'Hey 🖖,',
         part1: 'Je suis un spécialiste frontend, avec une forte ',

@@ -1,12 +1,13 @@
 <template>
   <section
     aria-label="socials"
-    class="flex items-center justify-between mt-8"
+    class="flex items-center justify-between mt-8 py-6 border-t border-b dark:border-mediumpurple"
   >
     <div class="flex items-center gap-2">
       <a
         class="socials_btn"
         title="Linkedin"
+        tabindex="0"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -22,6 +23,7 @@
       <a
         class="socials_btn"
         title="Github"
+        tabindex="0"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +41,7 @@
       <a
         class="socials_btn"
         title="X / Twitter"
+        tabindex="0"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +55,10 @@
         /></svg>
       </a>
     </div>
-    <button class="socials_btn h-[26px] text-sm px-4 dark:text-lightgray">
+    <button
+      class="socials_btn h-[26px] text-sm px-4 dark:text-lightgray"
+      :title="$t('email')"
+    >
       Contact Me
     </button>
   </section>
