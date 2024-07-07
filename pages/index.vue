@@ -1,7 +1,8 @@
 <template>
   <main class="text-sm md:text-base dark:text-lightgray mt-10">
     <p class="leading-6">
-      {{ $t('about.hello') }}<br> {{ $t('about.part1') }}
+      <span class="inline-block pb-2">{{ $t('about.hello') }}</span><br>
+      {{ $t('about.part1') }}
       <bold class="font-bold">
         {{ $t('about.product') }}
       </bold>
@@ -16,10 +17,12 @@
       {{ $t('about.part3') }}
       <bold class="font-bold">
         {{ $t('about.part4') }}
-      </bold> {{ $t('about.part5') }}
+      </bold>
+      {{ $t('about.part5') }}
       <bold class="font-bold">
         {{ $t('about.part6') }}
-      </bold>{{ $t('about.part7') }}
+      </bold>
+      {{ $t('about.part7') }}
     </p>
     <nav>
       <ul class="flex items-center gap-4">

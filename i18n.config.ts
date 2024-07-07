@@ -8,6 +8,8 @@ export default defineI18nConfig(() => ({
       ressources: 'Ressources',
       color_selector: 'Color mode selector',
       language_selector: 'Language selector',
+      contact: 'Contact me',
+      copied: 'Email copied',
       email: 'Copy Email address',
       about: {
         hello: 'Hey 🖖,',
@@ -29,6 +31,8 @@ export default defineI18nConfig(() => ({
       ressources: 'Références',
       color_selector: 'Sélection du mode d\'affichage',
       language_selector: 'Sélection de la langue',
+      contact: 'Me Contacter',
+      copied: 'Email copié',
       email: 'Copier adresse email',
       about: {
         hello: 'Hey 🖖,',
