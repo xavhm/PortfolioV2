@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="slide_btn p-1"
+    class="slide_btn"
     :title="$t('color_selector')"
     arial-label="display pages with dark mode"
     :aria-pressed="$colorMode.preference === 'light' ? false : true"
