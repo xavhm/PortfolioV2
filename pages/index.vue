@@ -1,5 +1,5 @@
 <template>
-  <main class="text-sm md:text-base dark:text-lightgray mt-10">
+  <main class="text-sm md:text-base dark:text-lightgray mt-6">
     <p class="leading-6">
       <span class="inline-block pb-2">{{ $t('about.hello') }}</span><br>
       {{ $t('about.part1') }}

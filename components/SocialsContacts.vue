@@ -1,7 +1,7 @@
 <template>
   <section
     aria-label="socials"
-    class="flex items-center justify-between mt-8 py-6 border-t border-b dark:border-mediumpurple"
+    class="flex items-center justify-between mt-6 py-6 border-t border-b dark:border-mediumpurple"
   >
     <div class="flex items-center gap-2">
       <NuxtLink
@@ -63,13 +63,12 @@
     </div>
     <button
       class="socials_btn h-[28px] w-[143px] text-sm text-mediumpurple px-4 dark:text-lightgray"
-      :class="{ 'border-green-600 hover:border-green-600 dark:border-green-800 dark:hover:border-green-800': isClicked }"
       :title="$t('email')"
       @click="copyEmail"
     >
       <div
         v-if="isClicked"
-        class="flex items-center"
+        class="flex items-center font-semibold"
       >
         {{ $t('copied') }}
         <span class="inline-block ml-2">
