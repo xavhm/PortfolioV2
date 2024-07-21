@@ -17,20 +17,20 @@
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.24.6",
-    "@iconify-json/lucide": "^1.1.192",
+    "@babel/eslint-parser": "^7.24.8",
+    "@iconify-json/lucide": "^1.1.200",
     "@nuxt/eslint": "^0.3.13",
-    "@nuxt/fonts": "^0.7.0",
+    "@nuxt/fonts": "^0.7.1",
+    "@nuxt/icon": "^1.2.1",
     "@nuxt/image": "^1.7.0",
-    "@nuxtjs/color-mode": "^3.4.1",
+    "@nuxtjs/color-mode": "^3.4.2",
     "@nuxtjs/i18n": "^8.3.1",
-    "@types/node": "^20.13.0",
+    "@types/node": "^20.14.11",
     "autoprefixer": "^10.4.19",
-    "nuxt": "^3.12.2",
-    "nuxt-icon": "^0.6.10",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.3",
-    "typescript": "^5.4.5",
-    "vue-tsc": "^1.8.27"
+    "nuxt": "^3.12.4",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6",
+    "typescript": "^5.5.3",
+    "vue-tsc": "^2.0.26"
   }
 }

@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4,
+  },
+
   css: ['@/assets/css/main.postcss'],
   postcss: {
     plugins: {
@@ -7,44 +11,53 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+
   typescript: {
     strict: true,
     typeCheck: true,
   },
+
   modules: [
     '@nuxt/fonts',
     '@nuxtjs/color-mode',
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxtjs/i18n',
-    'nuxt-icon',
+    '@nuxt/icon',
   ],
+
   devtools: {
     enabled: true,
   },
+
   nitro: {
     prerender: {
       autoSubfolderIndex: false,
     },
   },
+
   eslint: {
     config: {
       stylistic: true,
     },
   },
+
   experimental: {
     typedPages: true,
     viewTransition: true,
   },
+
   colorMode: {
     classSuffix: '',
   },
+
   fonts: {
     defaults: {
       weights: [300, 301, 400, 401, 500, 501, 700, 701, 900],
       styles: ['normal', 'italic'],
     },
   },
+
   i18n: {
     vueI18n: './i18n.config.ts',
     locales: ['en', 'fr'],
@@ -52,4 +65,6 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     detectBrowserLanguage: false,
   },
+
+  compatibilityDate: '2024-07-21',
 })

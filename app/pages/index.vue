@@ -3,25 +3,25 @@
     <p class="leading-6">
       <span class="inline-block pb-2">{{ $t('about.hello') }}</span><br>
       {{ $t('about.part1') }}
-      <bold class="font-bold">
+      <strong class="font-bold">
         {{ $t('about.product') }}
-      </bold>
+      </strong>
       {{ $t('about.and') }}
-      <bold class="font-bold">
+      <strong class="font-bold">
         {{ $t('about.mindset') }}
-      </bold>
+      </strong>
       {{ $t('about.part2') }}
-      <bold class="font-bold">
+      <strong class="font-bold">
         {{ $t('about.tech') }}
-      </bold>.
+      </strong>.
       {{ $t('about.part3') }}
-      <bold class="font-bold">
+      <strong class="font-bold">
         {{ $t('about.part4') }}
-      </bold>
+      </strong>
       {{ $t('about.part5') }}
-      <bold class="font-bold">
+      <strong class="font-bold">
         {{ $t('about.part6') }}
-      </bold>
+      </strong>
       {{ $t('about.part7') }}
     </p>
     <nav>
