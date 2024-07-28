@@ -28,8 +28,8 @@
       class="flex items-center gap-2"
       aria-label="display settings"
     >
-      <ColorSelector />
       <LanguageSelector />
+      <ColorSelector />
     </section>
   </header>
   <SocialsContacts />
