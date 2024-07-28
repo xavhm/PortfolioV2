@@ -8,14 +8,14 @@
     @click="locale === 'en' ? setLocale('fr') : setLocale('en')"
   >
     <div
-      class="text-sm text-mediumpurple dark:text-darkgray italic font-semibold motion-safe:transition-transform motion-safe:duration-500"
+      class="text-sm text-mediumpurple dark:text-darkgray italic motion-safe:transition-transform motion-safe:duration-500"
       :class="{ 'translate-y-[130%]': locale === 'fr' }"
       aria-hidden="true"
     >
       French
     </div>
     <div
-      class="absolute text-sm text-mediumpurple dark:text-darkgray italic font-semibold translate-y-[-130%] motion-safe:transition-transform motion-safe:duration-500"
+      class="absolute text-sm text-mediumpurple dark:text-darkgray italic translate-y-[-130%] motion-safe:transition-transform motion-safe:duration-500"
       :class="{ 'translate-y-[0]': locale === 'fr' }"
       aria-hidden="true"
     >

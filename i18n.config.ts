@@ -4,8 +4,11 @@ export default defineI18nConfig(() => ({
   fallbackLocale: 'en',
   messages: {
     en: {
-      work: 'Work',
-      ressources: 'Ressources',
+      routes:{
+        home: 'home',
+        works: 'works',
+        about: 'about'
+      },
       color_selector: 'Color mode selector',
       language_selector: 'Language selector',
       contact: 'Contact me',
@@ -27,8 +30,11 @@ export default defineI18nConfig(() => ({
       },
     },
     fr: {
-      work: 'Projets',
-      ressources: 'Références',
+      routes:{
+        home: 'accueil',
+        works: 'projets',
+        about: 'profil'
+      },
       color_selector: 'Sélection du mode d\'affichage',
       language_selector: 'Sélection de la langue',
       contact: 'Me Contacter',

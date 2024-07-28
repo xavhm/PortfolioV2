@@ -24,27 +24,5 @@
       </strong>
       {{ $t('about.part7') }}
     </p>
-    <nav>
-      <ul class="flex items-center gap-4">
-        <li>
-          <NavItem
-            label="home"
-            route="/"
-          />
-        </li>
-        <li>
-          <NavItem
-            label="works"
-            route="/works"
-          />
-        </li>
-        <li>
-          <NavItem
-            label="ressources"
-            route="/ressources"
-          />
-        </li>
-      </ul>
-    </nav>
   </main>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <section
     aria-label="socials"
-    class="flex items-center justify-between mt-6 py-6 border-t border-b dark:border-mediumpurple"
+    class="flex items-center justify-between mt-6 py-6 border-t dark:border-mediumpurple"
   >
     <div class="flex items-center gap-2">
       <NuxtLink
