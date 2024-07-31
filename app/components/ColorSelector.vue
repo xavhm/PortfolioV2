@@ -3,7 +3,7 @@
     type="button"
     class="slide_btn w-[26px] aspect-square"
     title="Color mode selector"
-    arial-label="display pages with dark mode"
+    arial-label="Display pages with dark mode"
     :aria-pressed="$colorMode.preference === 'light' ? false : true"
     @click="$colorMode.preference === 'light' ? $colorMode.preference = 'dark' : $colorMode.preference = 'light'"
   >

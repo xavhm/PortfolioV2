@@ -1,5 +1,6 @@
 <template>
-  <main class="text-sm md:text-base dark:text-lightgray mt-6">
+  <main class="text-lightpurple dark:text-darkgray mt-6">
     <TheDescription />
+    <SocialsContacts />
   </main>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    class="relative flex h-min overflow-hidden group cursor-pointer"
+    class="relative flex h-min overflow-hidden group cursor-pointer px-1"
     :to="props.route"
     :arial-label="`navigation to ${props.label} page`"
   >

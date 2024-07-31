@@ -1,26 +1,9 @@
 <template>
   <p class="leading-6 text-sm">
-    <span class="inline-block pb-2">Hi,</span><br>
-    I'm a web developer with a
-    <strong class="font-bold">
-      product
-    </strong>
-    background and
-    <strong class="font-bold">
-      user-centric mindset.
-    </strong>
-    I work mainly with Vue
-    <strong class="font-bold">
-      Vue
-    </strong>.
-    and React. I have a strong interest in CSS, rendering strategies, accessibility, performances optimization and
-    <strong class="font-bold">
-      hexagonal / clean architecture
-    </strong>
-    principles. I also build with backend technologies with a specific focus on languages like
-    <strong class="font-bold">
-      Go and Rust?
-    </strong>
+    A web developer based in France, with a<strong> product </strong>background and<strong> user-centric mindset.</strong>
+    Specialized in frontend work with<strong> Vue and React,</strong>
+    with a strong interest in CSS, rendering strategies, accessibility, performances optimization and<strong> hexagonal / clean architecture </strong>principles.
+    A competence-driven developer aiming for full-stack mastery, with modern languages like<strong> go and rust.</strong>
   </p>
 </template>
 

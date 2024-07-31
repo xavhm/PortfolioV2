@@ -8,24 +8,23 @@
         preload
         src="/iatoon_avatar.jpg"
         format="avif"
-        width="40px"
-        height="40px"
+        width="50px"
+        height="50px"
         alt="avatar"
         class="rounded-full aspect-square object-top my-auto border border-lightpurple dark:border-lightpurple"
       />
       <div class="flex flex-col items-start justify-between">
-        <h2 class="font-bold text-base text-lightpurple dark:text-lightgray">
+        <h2 class="font-bold text-base text-lightpurple dark:text-darkgray">
           Xavier Hernandez
         </h2>
-        <h3 class="flex items-center gap-1 text-sm text-lightpurple dark:text-lightgray">
+        <h3 class="flex items-center gap-1 text-sm text-lightpurple dark:text-darkgray">
           Frontend Engineer
           <span>
             <NuxtLink
               title="Raccourci Agency"
-              tabindex="0"
               to="https://www.raccourci.fr/"
               target="_blank"
-              class="hover:text-darkpurple dark:hover:text-darkgray"
+              class="px-1 hover:text-darkpurple dark:hover:text-darkgray outlined"
             >@RaccourciAgency
             </NuxtLink>
           </span>

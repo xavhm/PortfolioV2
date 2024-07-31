@@ -4,11 +4,15 @@
 
 @layer components {
   .slide_btn {
-    @apply relative flex items-center justify-center overflow-hidden bg-zinc-100 dark:bg-mediumpurple rounded cursor-pointer focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple;
+    @apply relative flex items-center justify-center overflow-hidden bg-gray-200/40 dark:bg-mediumpurple rounded cursor-pointer border border-transparent hover:border-lightpurple dark:hover:border-gray-200/20 focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple;
   }
 
   .socials_btn {
-    @apply flex items-center justify-center p-1 bg-lightgray dark:bg-lightpurple border border-neutral-300 dark:border-neutral-600 hover:border-neutral-400 dark:hover:border-neutral-500 rounded cursor-pointer focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple;
+    @apply flex items-center justify-center p-2 bg-gray-200/40 dark:bg-mediumpurple rounded cursor-pointer border border-transparent hover:border-lightpurple dark:hover:border-gray-200/20 focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple;
+  }
+
+  .outlined {
+    @apply focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple rounded;
   }
 }
 
