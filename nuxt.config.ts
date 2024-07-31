@@ -22,7 +22,6 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/eslint',
     '@nuxt/image',
-    '@nuxtjs/i18n',
     '@nuxt/icon',
   ],
 
@@ -43,6 +42,7 @@ export default defineNuxtConfig({
   },
 
   experimental: {
+    componentIslands: true,
     typedPages: true,
     viewTransition: true,
   },
@@ -56,14 +56,6 @@ export default defineNuxtConfig({
       weights: [300, 301, 400, 401, 500, 501, 700, 701, 900],
       styles: ['normal', 'italic'],
     },
-  },
-
-  i18n: {
-    vueI18n: './i18n.config.ts',
-    locales: ['en', 'fr'],
-    defaultLocale: 'en',
-    strategy: 'prefix_except_default',
-    detectBrowserLanguage: false,
   },
 
   compatibilityDate: '2024-07-21',

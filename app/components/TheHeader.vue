@@ -26,7 +26,6 @@
       class="flex items-center gap-2"
       aria-label="display settings"
     >
-      <LanguageSelector />
       <ColorSelector />
     </section>
   </header>

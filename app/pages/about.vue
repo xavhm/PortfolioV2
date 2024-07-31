@@ -1,5 +1,5 @@
 <template>
   <main class="dark:text-red-500">
-    {{ $t('routes.about') }}
+    <p>About</p>>
   </main>
 </template>

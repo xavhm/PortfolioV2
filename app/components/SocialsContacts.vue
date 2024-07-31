@@ -63,14 +63,14 @@
     </div>
     <button
       class="socials_btn h-[28px] w-[143px] text-sm text-mediumpurple px-4 dark:text-lightgray"
-      :title="$t('email')"
+      title="Copy email address"
       @click="copyEmail"
     >
       <div
         v-if="isClicked"
         class="flex items-center font-semibold"
       >
-        {{ $t('copied') }}
+        Copied!
         <span class="inline-block ml-2">
           <Icon
             class="relative top-[-2px]"
@@ -84,7 +84,7 @@
         v-else
         class="flex items-center"
       >
-        {{ $t('contact') }}
+        Copy email
         <span class="inline-block ml-2">
           <Icon
             class="relative top-[-1px]"

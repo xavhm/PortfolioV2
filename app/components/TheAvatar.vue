@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col justify-start gap-4"
+    class="flex flex-col justify-start gap-4 my-8"
     aria-label="profile description"
   >
     <div class="flex items-center gap-4">
@@ -18,7 +18,17 @@
           Xavier Hernandez
         </h2>
         <h3 class="flex items-center gap-1 text-sm text-lightpurple dark:text-lightgray">
-          Frontend Engineer <span><NuxtLink title="Raccourci Agency" tabindex="0" to="https://www.raccourci.fr/" target="_blank" class="hover:text-darkpurple dark:hover:text-darkgray">@RaccourciAgency</NuxtLink></span>
+          Frontend Engineer
+          <span>
+            <NuxtLink
+              title="Raccourci Agency"
+              tabindex="0"
+              to="https://www.raccourci.fr/"
+              target="_blank"
+              class="hover:text-darkpurple dark:hover:text-darkgray"
+            >@RaccourciAgency
+            </NuxtLink>
+          </span>
         </h3>
       </div>
     </div>
