@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col justify-start gap-4 my-8"
+    class="flex flex-col justify-start gap-4 mt-8"
     aria-label="profile description"
   >
     <div class="flex items-center gap-4">
