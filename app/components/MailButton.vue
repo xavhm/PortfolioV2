@@ -10,6 +10,7 @@
     <div
       class="flex items-center font-semibold translate-y-[-140%] motion-safe:transition-transform motion-safe:duration-500"
       :class="{ 'translate-y-[0]': isClicked }"
+      aria-hidden="true"
     >
       Copied!
       <span class="inline-block ml-2">

@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col justify-start gap-4 mt-8"
+    class="flex flex-col justify-start gap-4"
     aria-label="profile description"
   >
     <div class="flex items-center gap-4">
@@ -19,15 +19,6 @@
         </h2>
         <h3 class="flex items-center gap-1 text-sm text-lightpurple dark:text-darkgray">
           Frontend Engineer
-          <span>
-            <NuxtLink
-              title="Raccourci Agency"
-              to="https://www.raccourci.fr/"
-              target="_blank"
-              class="px-1 hover:text-darkpurple dark:hover:text-darkgray outlined"
-            >@RaccourciAgency
-            </NuxtLink>
-          </span>
         </h3>
       </div>
     </div>

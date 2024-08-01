@@ -65,7 +65,7 @@
       <MailButton />
       <NuxtLink
         class="h-[34px] socials_btn text-sm"
-        title="Linkedin"
+        title="Download resume"
         tabindex="0"
         to="/xhm_resume.pdf"
         target="_blank"

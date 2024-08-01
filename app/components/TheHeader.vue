@@ -32,5 +32,4 @@
       <ColorSelector />
     </section>
   </header>
-  <TheAvatar />
 </template>
