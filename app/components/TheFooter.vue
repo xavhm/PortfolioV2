@@ -1,7 +1,7 @@
 <template>
-  <footer class="flex items-center justify-between text-sm text-lightpurple dark:text-darkgray my-8">
+  <footer class="flex items-center justify-between text-xs text-lightpurple dark:text-darkgray my-8">
     <p> &copy; {{ year }} Xavier Hernandez</p>
-    <p>powered by Nuxt 3 💚</p>
+    <p>Built with Nuxt 💚</p>
   </footer>
 </template>
 
