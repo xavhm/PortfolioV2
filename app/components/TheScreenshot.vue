@@ -3,8 +3,8 @@
     class="w-full mt-16 overflow-hidden group"
     aria-label="projects gallery"
   >
-    <div class="flex items-center justify-between mb-2">
-      <h3 class="italic font-semibold text-sm">
+    <div class="flex items-center justify-between mb-4">
+      <h3 class="italic font-semibold">
         Works
       </h3>
       <p class="flex items-center gap-2 text-sm motion-safe:translate-x-full motion-safe:group-hover:translate-x-0 motion:safe:transition-all motion-safe:duration-300 motion-safe:ease-out">
@@ -24,10 +24,10 @@
       >
         <NuxtPicture
           preload
-          src="/erp_home.avif"
+          src="/midjourney_home.avif"
           quality="100"
           height="940"
-          alt="dashboard screenshot"
+          alt="home office by midjourney v5"
           placeholder
           class="sized"
         />

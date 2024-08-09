@@ -1,9 +1,9 @@
 <template>
   <section
-    class="mt-8"
+    class="mt-10"
     aria-label="my tech stack"
   >
-    <h3 class="italic font-semibold text-sm mb-4">
+    <h3 class="italic font-semibold mb-6">
       Tech Stack
     </h3>
     <div class="flex items-center justify-between gap-2 flex-wrap">
