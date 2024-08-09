@@ -106,7 +106,7 @@
             placeholder
           />
         </div>
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start gap-1">
           <p class="font-semibold">
             LiveOPS Manager @Winamax
           </p>

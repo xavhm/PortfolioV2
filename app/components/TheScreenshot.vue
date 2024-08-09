@@ -1,7 +1,7 @@
 <template>
   <section
     class="w-full mt-16 overflow-hidden group"
-    aria-label="projects gallery"
+    aria-label="link to the projects gallery"
   >
     <div class="flex items-center justify-between mb-4">
       <h3 class="italic font-semibold">
