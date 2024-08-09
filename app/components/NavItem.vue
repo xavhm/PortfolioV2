@@ -10,7 +10,7 @@
       {{ props.label }}
     </span>
     <span
-      class="absolute text-sm font-semibold text-lightpurple dark:text-darkgray left-0 w-fit translate-y-[-100%] motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:translate-y-[0%]"
+      class="absolute text-sm font-semibold italic text-lightpurple dark:text-darkgray left-0 w-fit translate-y-[-100%] motion-safe:transition-transform motion-safe:duration-500 motion-safe:group-hover:translate-y-[0%]"
       aria-hidden="true"
     >
       {{ props.label }}
