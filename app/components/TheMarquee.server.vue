@@ -3,7 +3,7 @@
     class="mt-8"
     aria-label="my tech stack"
   >
-    <h3 class="italic font-semibold text-sm mb-2">
+    <h3 class="italic font-semibold text-sm mb-4">
       Tech Stack
     </h3>
     <div class="flex items-center justify-between gap-2 flex-wrap">
