@@ -23,7 +23,6 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/icon',
-    '@nuxtjs/html-validator',
   ],
 
   devtools: {
