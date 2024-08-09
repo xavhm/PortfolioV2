@@ -8,18 +8,19 @@
         preload
         src="/iatoon_avatar.jpg"
         format="avif"
-        width="50px"
-        height="50px"
+        fit="cover"
+        width="50"
+        height="50"
         alt="avatar"
-        class="rounded-full aspect-square object-top my-auto border border-lightpurple dark:border-lightpurple"
+        class="rounded-full my-auto border border-lightpurple dark:border-lightpurple"
       />
       <div class="flex flex-col items-start justify-between">
-        <h2 class="font-bold text-base text-lightpurple dark:text-darkgray">
+        <h1 class="font-bold text-base text-lightpurple dark:text-darkgray">
           Xavier Hernandez
-        </h2>
-        <h3 class="flex items-center gap-1 text-sm text-lightpurple dark:text-darkgray">
+        </h1>
+        <h2 class="flex items-center gap-1 text-sm text-lightpurple dark:text-darkgray">
           Frontend Engineer
-        </h3>
+        </h2>
       </div>
     </div>
   </section>

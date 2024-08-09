@@ -3,7 +3,7 @@
     <TheAvatar />
     <TheDescription />
     <SocialsContacts />
-    <TheGallery />
+    <TheScreenshot />
     <TheMarquee />
     <TheCareer />
   </main>
