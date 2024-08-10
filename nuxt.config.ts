@@ -23,6 +23,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxt/icon',
+    'nuxt-security',
   ],
 
   devtools: {
