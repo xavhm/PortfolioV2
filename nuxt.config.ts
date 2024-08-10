@@ -24,6 +24,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon',
     'nuxt-security',
+    '@nuxtjs/seo',
   ],
 
   devtools: {
@@ -57,6 +58,17 @@ export default defineNuxtConfig({
       weights: [300, 301, 400, 401, 500, 501, 700, 701, 900],
       styles: ['normal', 'italic'],
     },
+  },
+
+  site: {
+    url: 'https://www.xavhm.foo',
+    name: 'Xav - Portfolio',
+    description: 'Frontend developer portfolio!',
+    defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
+  },
+
+  ogImage: {
+    enabled: false,
   },
 
   compatibilityDate: '2024-07-21',

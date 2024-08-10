@@ -24,6 +24,7 @@
     "@nuxt/icon": "^1.2.1",
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/color-mode": "^3.4.2",
+    "@nuxtjs/seo": "2.0.0-rc.18",
     "@types/node": "^20.14.11",
     "autoprefixer": "^10.4.19",
     "nuxt": "^3.12.4",
