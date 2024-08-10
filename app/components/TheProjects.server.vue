@@ -48,7 +48,7 @@
           preload
           :src="project.screenshot"
           quality="100"
-          height="840"
+          height="960"
           :alt="project.name"
           placeholder
           class="sized"
