@@ -56,10 +56,12 @@
       </div>
       <div class="text-sm py-2">
         <p class="mb-1">
-          Role: {{ project.role }}
+          <span class="font-semibold">Role</span>: {{ project.role }}
         </p>
         <div class="flex flex-wrap items-center gap-2">
-          <p>Stack:</p>
+          <p class="font-semibold">
+            Stack:
+          </p>
           <div
             v-for="tech in project.stack"
             :key="tech"
@@ -69,10 +71,12 @@
           </div>
         </div>
         <p class="leading-6 py-2">
-          Pitch: {{ project.description }}
+          <span class="font-semibold">Pitch</span>: {{ project.description }}
         </p>
         <div class="flex flex-wrap items-center gap-2">
-          <p>Tasks:</p>
+          <p class="font-semibold">
+            Tasks:
+          </p>
           <div
             v-for="bullet in project.work"
             :key="bullet"
@@ -161,6 +165,6 @@ const projects: Array<Project> = [
   }
 
   .pill {
-    @apply bg-white rounded-2xl border border-red-500 px-2;
+    @apply bg-white dark:bg-darkgray dark:text-darkpurple rounded-xl border border-lightpurple dark:border-white px-2 text-sm;
   }
 </style>
