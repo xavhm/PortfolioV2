@@ -1,5 +1,5 @@
 <template>
-  <main class="dark:text-red-500">
-    <p>About</p>
+  <main class="text-lightpurple dark:text-darkgray mt-6">
+    <TheAboutContent />
   </main>
 </template>

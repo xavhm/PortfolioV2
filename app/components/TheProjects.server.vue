@@ -49,7 +49,7 @@
           :src="project.screenshot"
           quality="100"
           height="960"
-          :alt="project.name"
+          :alt="`${project.name} project screenshot`"
           placeholder
           class="sized"
         />

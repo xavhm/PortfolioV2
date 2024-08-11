@@ -7,8 +7,8 @@
       Career
     </h3>
     <article class="flex flex-col items-start gap-2 mb-10">
-      <div class="flex items-center text-sm gap-4 mb-2">
-        <div class="w-fit rounded-md overflow-hidden mb-2">
+      <div class="w-full flex flex-row-reverse items-center justify-between text-sm gap-4 mb-2">
+        <div class="w-fit rounded-md overflow-hidden mb-2 career_logo">
           <NuxtPicture
             src="/raccourci_logo.png"
             quality="90"
@@ -36,8 +36,8 @@
       </div>
     </article>
     <article class="flex flex-col items-start gap-2 mb-10">
-      <div class="flex items-center text-sm gap-4 mb-2">
-        <div class="w-fit rounded-md overflow-hidden mb-2">
+      <div class="w-full flex flex-row-reverse items-center justify-between text-sm gap-4 mb-2">
+        <div class="w-fit rounded-md overflow-hidden mb-2 career_logo">
           <NuxtPicture
             src="/oc_logo.png"
             quality="90"
@@ -67,8 +67,8 @@
       </div>
     </article>
     <article class="flex flex-col items-start gap-2 mb-10">
-      <div class="flex items-center text-sm gap-4 mb-2">
-        <div class="w-fit rounded-md overflow-hidden mb-2">
+      <div class="w-full flex flex-row-reverse items-center justify-between text-sm gap-4 mb-2">
+        <div class="w-fit rounded-md overflow-hidden mb-2 career_logo">
           <NuxtPicture
             src="/wagon_logo.png"
             quality="90"
@@ -95,8 +95,8 @@
       </div>
     </article>
     <article class="flex flex-col items-start gap-2 mb-12">
-      <div class="flex items-center text-sm gap-4 mb-2">
-        <div class="w-fit rounded-md overflow-hidden mb-2">
+      <div class="w-full flex flex-row-reverse items-center justify-between text-sm gap-4 mb-2">
+        <div class="w-fit rounded-md overflow-hidden mb-2 career_logo">
           <NuxtPicture
             src="/wina_logo.png"
             quality="90"
