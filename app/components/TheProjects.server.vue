@@ -131,7 +131,7 @@ const projects: Array<Project> = [
     stack: ['Typescript', 'WebComponent', 'Nuxt2', 'Scss'],
     url: 'https://terres-de-seine.youbook.travel/fr',
     repository: null,
-    description: 'E-commerce platform for selling activities online for tourism professionals.',
+    description: 'E-commerce platform for tourism professionals, to sell sport and touristic activites.',
     work: ['Prototyping', 'Bug Fixing', 'Web Components', 'Testing'],
   },
   {
@@ -148,7 +148,7 @@ const projects: Array<Project> = [
     name: 'RoadBOOK',
     screenshot: '/roadbook_screen.avif',
     role: 'Developer',
-    stack: ['Javascript', 'Vue', 'VueX', 'Scss'],
+    stack: ['Javascript', 'Vue2', 'Vue3', 'VueX', 'Scss'],
     url: 'https://roadbook.travel/',
     repository: null,
     description: 'The recommendations from tourist offices are compiled into a personalized web application and sent to the traveler by email or SMS immediately after the exchange.',
