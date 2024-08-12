@@ -63,13 +63,12 @@
     </div>
     <div class="flex items-center gap-2">
       <MailButton />
-      <!-- <NuxtLink
+      <NuxtLink
         class="h-[34px] socials_btn text-sm"
         title="Download resume"
         tabindex="0"
-        to="/xhm_resume.pdf"
+        to="/XavierHM-CV-EN.pdf"
         target="_blank"
-        external
       >
         Resume
         <Icon
@@ -78,7 +77,7 @@
           name="lucide:file-down"
           size="16px"
         />
-      </NuxtLink> -->
+      </NuxtLink>
     </div>
   </section>
 </template>
