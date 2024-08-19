@@ -49,6 +49,20 @@ export default defineNuxtConfig({
     viewTransition: true,
   },
 
+  security: {
+    nonce: true,
+    headers: {
+      contentSecurityPolicy: {
+        'style-src': process.env.NODE_ENV === 'development'
+          ? ['\'self\'', '\'unsafe-inline\'']
+          : ['\'self\'', '\'unsafe-inline\'', 'nonce-{{nonce}}'],
+        'script-src': process.env.NODE_ENV === 'development'
+          ? ['\'self\'', '\'unsafe-inline\'']
+          : ['\'self\'', '\'unsafe-inline\'', 'nonce-{{nonce}}'],
+      },
+    },
+  },
+
   colorMode: {
     classSuffix: '',
   },
