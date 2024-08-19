@@ -1,35 +1,94 @@
 <template>
-  <header class="w-full flex sm:flex-row items-center justify-between my-8">
+  <header class="fixed top-6 right-6 z-20 flex items-center mb-8">
     <nav>
-      <ul class="flex items-center gap-4">
-        <li>
-          <NavItem
-            class="outlined"
-            label="home"
-            route="/"
-          />
+      <ul class="flex items-center gap-2">
+        <li
+          class="nav_item"
+          style="--delay: 1.5;"
+        >
+          <NuxtLink
+            aria-label="Back to Home Page"
+            class="nav_button"
+            to="/"
+          >
+            <Icon
+              :style="$colorMode.value === 'dark' ? 'color:black;' : 'color:red;'"
+              name="lucide:house"
+              size="16px"
+            />
+          </NuxtLink>
         </li>
-        <li>
-          <NavItem
-            class="outlined"
-            label="works"
-            route="/works"
-          />
+        <li
+          class="nav_item"
+          style="--delay: 1;"
+        >
+          <button
+            aria-label="Toggle Color mode"
+            type="button"
+            class="nav_button"
+            :aria-pressed="$colorMode.preference === 'light' ? false : true"
+            @click="$colorMode.preference === 'light' ? $colorMode.preference = 'dark' : $colorMode.preference = 'light'"
+          >
+            <Icon
+              :style="$colorMode.value === 'dark' ? 'color:black;' : 'color:red;'"
+              :name="$colorMode.preference === 'light' ? 'lucide:sun' : 'lucide:moon'"
+              size="16px"
+            />
+          </button>
         </li>
-        <li>
-          <NavItem
-            class="outlined"
-            label="about"
-            route="/about"
-          />
+        <li
+          class="nav_item"
+          style="--delay: 0.5;"
+        >
+          <button
+            aria-label="Open Command Menu"
+            type="button"
+            class="nav_button"
+            @click="isOpen = !isOpen"
+          >
+            <Icon
+              :style="$colorMode.value === 'dark' ? 'color:black;' : 'color:red;'"
+              name="lucide:menu"
+              size="16px"
+            />
+          </button>
         </li>
       </ul>
     </nav>
-    <section
+    <!-- <section
       class="flex items-center gap-2"
       aria-label="display settings"
     >
       <ColorSelector />
-    </section>
+    </section> -->
   </header>
+  <UModal v-model="isOpen">
+    <CommandPalette v-if="isOpen" />
+  </UModal>
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+
+const isOpen = ref(false)
+</script>
+
+<style lang="postcss" scoped>
+.nav_button {
+  @apply h-10 w-10 bg-white rounded-full grid place-items-center;
+}
+
+.nav_item {
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: entering .5s cubic-bezier(.23,1.21,.98,.99) forwards;
+  animation-delay: calc(var(--delay, 1) * .5s);
+}
+
+@keyframes entering {
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+</style>
