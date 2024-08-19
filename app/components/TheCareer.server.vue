@@ -49,7 +49,7 @@
         </div>
         <div class="flex flex-col items-start gap-1">
           <p class="font-semibold">
-            Frontend professional development contract @Openclassrooms
+            Frontend Development pro. contract @Openclassrooms
           </p>
           <p>
             Nov 2021 - Feb 2023

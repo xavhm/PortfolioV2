@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     'nuxt-security',
     '@nuxtjs/seo',
+    '@nuxt/ui',
   ],
 
   devtools: {
