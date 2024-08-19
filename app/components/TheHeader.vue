@@ -30,8 +30,15 @@
             @click="$colorMode.preference === 'light' ? $colorMode.preference = 'dark' : $colorMode.preference = 'light'"
           >
             <Icon
+              v-if="$colorMode.preference === 'dark'"
               :style="$colorMode.value === 'dark' ? 'color:black;' : 'color:red;'"
-              :name="$colorMode.preference === 'light' ? 'lucide:sun' : 'lucide:moon'"
+              name="lucide:moon"
+              size="16px"
+            />
+            <Icon
+              v-else
+              :style="$colorMode.value === 'dark' ? 'color:black;' : 'color:red;'"
+              name="lucide:sun"
               size="16px"
             />
           </button>
@@ -75,14 +82,14 @@ const isOpen = ref(false)
 
 <style lang="postcss" scoped>
 .nav_button {
-  @apply h-10 w-10 bg-white rounded-full grid place-items-center;
+  @apply h-10 w-10 bg-white rounded-full shadow grid place-items-center cursor-pointer motion-safe:transition-transform motion-safe:duration-300 hover:motion-safe:scale-105;
 }
 
 .nav_item {
   opacity: 0;
   transform: translateY(-100px);
   animation: entering .5s cubic-bezier(.23,1.21,.98,.99) forwards;
-  animation-delay: calc(var(--delay, 1) * .5s);
+  animation-delay: calc(var(--delay, 1) * .3s);
 }
 
 @keyframes entering {
