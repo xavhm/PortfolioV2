@@ -77,8 +77,8 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://www.xavhm.foo',
-    name: 'Xav\'s Portfolio',
-    description: 'Frontend Developer!',
+    name: 'Xav_ | Frontend Web Development',
+    description: 'Xav_ | Frontend Web Development',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
 

@@ -1,27 +1,45 @@
 <script setup lang="ts">
-const people = [
-  { id: 1, label: 'Wade Cooper' },
-  { id: 2, label: 'Arlene Mccoy' },
-  { id: 3, label: 'Devon Webb' },
-  { id: 4, label: 'Tom Cook' },
-  { id: 5, label: 'Tanya Fox' },
-  { id: 6, label: 'Hellen Schmidt' },
-  { id: 7, label: 'Caroline Schultz' },
-  { id: 8, label: 'Mason Heaney' },
-  { id: 9, label: 'Claudie Smitham' },
-  { id: 10, label: 'Emil Schaefer' },
+const commandPaletteRef = ref()
+const emits = defineEmits(['close'])
+
+const users = [
+  { id: 'home', label: 'Home', icon: 'i-heroicons-home', to: '/' },
+  { id: 'works', label: 'Works', icon: 'i-heroicons-briefcase', to: 'works' },
+  { id: 'about', label: 'About', icon: 'i-heroicons-user-circle', to: 'about' },
 ]
 
-const selected = ref([])
+const actions = [
+  { id: 'email', label: 'Copy Email', icon: 'i-heroicons-document-duplicate', copy: true },
+  { id: 'resume', label: 'Get Resume', icon: 'i-heroicons-document-arrow-down', href: '/XavierHM-CV-EN.pdf' },
+  { id: 'linkedin', label: 'LinkedIn', icon: 'i-heroicons-arrow-up-right', href: 'https://www.linkedin.com/in/xavhm/' },
+  { id: 'github', label: 'Github', icon: 'i-heroicons-arrow-up-right', href: 'https://github.com/xavhm' },
+  { id: 'x', label: 'X/Twitter', icon: 'i-heroicons-arrow-up-right', href: 'https://x.com/_xavhm' },
+]
+
+const groups = computed(() => [{ key: 'users', commands: users }, { key: 'actions', commands: actions }])
+
+// @ts-expect-error unknown type for option param
+function onSelect(option) {
+  if (option.to) {
+    navigateTo(option.to)
+  }
+  else if (option.href) {
+    window.open(option.href, '_blank')
+  }
+  else if (option.copy) {
+    navigator.clipboard.writeText('xhernan.martinez@gmail.com')
+  }
+  emits('close')
+}
 </script>
 
 <template>
   <UCommandPalette
-    v-model="selected"
-    multiple
-    nullable
-    class="min-h-[390px] bg-lightgray dark:bg-lightpurple rounded"
-    :groups="[{ key: 'people', commands: people }]"
+    ref="commandPaletteRef"
+    :groups="groups"
+    :autoselect="false"
+    class="min-h-[350px] bg-lightgray dark:bg-lightpurple rounded"
     :empty-state="{ icon: 'i-heroicons-magnifying-glass-20-solid', label: 'No result.', queryLabel: 'No item found. Please try something else.' }"
+    @update:model-value="onSelect"
   />
 </template>

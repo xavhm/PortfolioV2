@@ -12,9 +12,9 @@ useHeadSafe({
   ],
 })
 useSeoMeta({
-  ogTitle: 'Xav\'s Portfolio',
-  description: 'Xav\'s Portfolio - Frontend Development.',
-  ogDescription: 'Xav\'s Portfolio - Frontend Development.',
+  ogTitle: 'Xav_ | Frontend Web Development',
+  description: 'Xav_ | Frontend Web Development',
+  ogDescription: 'Xav_ | Frontend Web Development',
   ogImage: 'https://www.xavhm.foo/midjourney_home.avif',
   twitterCard: 'summary_large_image',
 })
