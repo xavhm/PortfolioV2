@@ -5,7 +5,7 @@
   >
     <article
       v-for="project in projects"
-      :id="project.id ?? '#'"
+      :id="project.id"
       :key="project.name"
       class="mb-8"
     >
@@ -95,7 +95,7 @@
 <script setup lang='ts'>
 type Project = {
   name: string
-  id?: string
+  id: string
   screenshot: string
   role: string
   stack: Array<string>
@@ -108,6 +108,7 @@ type Project = {
 const projects: Array<Project> = [
   {
     name: 'Raccourci ERP',
+    id: 'erp',
     screenshot: '/erp_screen.avif',
     role: 'Lead Developer',
     stack: ['Typescript', 'Vue3', 'Pinia', 'Tailwind'],
@@ -118,6 +119,7 @@ const projects: Array<Project> = [
   },
   {
     name: 'Touristic Map',
+    id: 'tmaps',
     screenshot: '/tmaps_screen.avif',
     role: 'Developer',
     stack: ['Rust', 'Typescript', 'Vue3', 'Tailwind', 'Shadcn-Vue'],
@@ -128,6 +130,7 @@ const projects: Array<Project> = [
   },
   {
     name: 'youBOOK',
+    id: 'youbook',
     screenshot: '/youbook_screen.avif',
     role: 'Developer',
     stack: ['Typescript', 'WebComponent', 'Nuxt2', 'Scss'],
@@ -138,6 +141,7 @@ const projects: Array<Project> = [
   },
   {
     name: 'FairGUEST',
+    id: 'fairguest',
     screenshot: '/fairguest_screen.avif',
     role: 'Developer',
     stack: ['Typescript', 'Vue2', 'Vue3', 'Pinia', 'Tailwind'],

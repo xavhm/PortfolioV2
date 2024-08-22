@@ -3,8 +3,8 @@
     class="w-full mt-16"
     aria-label="links to the projects gallery"
   >
-    <h3 class="text-xl font-semibold">
-      Works
+    <h3 class="font-semibold">
+      Projects
     </h3>
   </section>
 </template>

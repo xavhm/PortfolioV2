@@ -4,7 +4,7 @@ const emits = defineEmits(['close'])
 
 const users = [
   { id: 'home', label: 'Home', icon: 'i-heroicons-home', to: '/' },
-  { id: 'works', label: 'Works', icon: 'i-heroicons-briefcase', to: 'works' },
+  { id: 'projects', label: 'Projects', icon: 'i-heroicons-briefcase', to: 'projects' },
   { id: 'about', label: 'About', icon: 'i-heroicons-user-circle', to: 'about' },
 ]
 
@@ -38,7 +38,7 @@ function onSelect(option) {
     ref="commandPaletteRef"
     :groups="groups"
     :autoselect="false"
-    class="min-h-[350px] rounded"
+    class="min-h-[340px] rounded"
     :empty-state="{ icon: 'i-heroicons-magnifying-glass-20-solid', label: 'No result.', queryLabel: 'No item found. Please try something else.' }"
     @update:model-value="onSelect"
   />
