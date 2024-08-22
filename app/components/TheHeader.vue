@@ -13,7 +13,7 @@
             to="/"
           >
             <Icon
-              :style="$colorMode.value === 'dark' ? 'color:black;' : 'color:red;'"
+              :style="$colorMode.value === 'dark' ? 'color:#18181b;' : 'color:#1e1b4b;'"
               name="lucide:house"
               size="18px"
             />
@@ -32,13 +32,13 @@
           >
             <Icon
               v-if="$colorMode.preference === 'dark'"
-              :style="$colorMode.value === 'dark' ? 'color:black;' : 'color:red;'"
+              :style="$colorMode.value === 'dark' ? 'color:#18181b;' : 'color:#1e1b4b;'"
               name="lucide:moon"
               size="18px"
             />
             <Icon
               v-else
-              :style="$colorMode.value === 'dark' ? 'color:black;' : 'color:red;'"
+              :style="$colorMode.value === 'dark' ? 'color:#18181b;' : 'color:#1e1b4b;'"
               name="lucide:sun"
               size="18px"
             />
@@ -55,7 +55,7 @@
             @click="isOpen = !isOpen"
           >
             <Icon
-              :style="$colorMode.value === 'dark' ? 'color:black;' : 'color:red;'"
+              :style="$colorMode.value === 'dark' ? 'color:#18181b;' : 'color:#1e1b4b;'"
               name="lucide:menu"
               size="18px"
             />
@@ -88,8 +88,8 @@ const isNavigating = computed(() => router.currentRoute.value.name !== 'index')
 
 <style lang="postcss" scoped>
 .nav_button {
-  @apply h-10 w-10 bg-white rounded-full shadow grid place-items-center cursor-pointer motion-safe:transition-all motion-safe:duration-300 hover:motion-safe:scale-105
-  focus-visible:outline focus-visible:outline-2 outline-offset-2 outline-lightpurple dark:outline-white hover:drop-shadow-purple;
+  @apply h-10 w-10 bg-white dark:bg-zinc-100 rounded-full shadow-md grid place-items-center cursor-pointer motion-safe:transition-all motion-safe:duration-300 hover:motion-safe:scale-105
+  focus-visible:outline focus-visible:outline-2 outline-offset-2 outline-violet-950 dark:outline-zinc-100 hover:drop-shadow-purple dark:hover:drop-shadow-white;
 }
 
 .nav_item {

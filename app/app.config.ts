@@ -5,4 +5,8 @@ export default defineAppConfig({
     mode: 'css', // default <Icon> mode applied
     fallbackToApi: false,
   },
+  ui: {
+    primary: 'violet',
+    gray: 'zinc',
+  },
 })

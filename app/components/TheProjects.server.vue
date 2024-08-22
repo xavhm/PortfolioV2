@@ -5,6 +5,7 @@
   >
     <article
       v-for="project in projects"
+      :id="project.id ?? '#'"
       :key="project.name"
       class="mb-8"
     >
@@ -36,7 +37,7 @@
             target="_blank"
           >
             <Icon
-              :color="$colorMode.value === 'dark' ? '#FFF' : '#3b0764'"
+              :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
               name="lucide:external-link"
               size="16px"
             />
@@ -94,6 +95,7 @@
 <script setup lang='ts'>
 type Project = {
   name: string
+  id?: string
   screenshot: string
   role: string
   stack: Array<string>
@@ -146,6 +148,7 @@ const projects: Array<Project> = [
   },
   {
     name: 'RoadBOOK',
+    id: 'rdbk',
     screenshot: '/roadbook_screen.avif',
     role: 'Developer',
     stack: ['Javascript', 'Vue2', 'Vue3', 'VueX', 'Scss'],
@@ -165,6 +168,6 @@ const projects: Array<Project> = [
   }
 
   .pill {
-    @apply bg-white dark:bg-darkgray dark:text-darkpurple rounded-xl border border-lightpurple dark:border-white px-2 text-sm;
+    @apply bg-white dark:bg-zinc-900 dark:text-zinc-100 rounded-xl border border-purple-300 dark:border-white px-2 text-sm;
   }
 </style>

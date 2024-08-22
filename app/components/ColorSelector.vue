@@ -17,7 +17,7 @@
     <Icon
       class="absolute translate-y-[-140%] motion-safe:transition-transform motion-safe:duration-500"
       :class="{ 'translate-y-[0]': $colorMode.value === 'dark' }"
-      style="color: var(--darkgray);"
+      style="color: #000;"
       name="lucide:sun"
       size="16px"
     />

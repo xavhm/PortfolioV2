@@ -1,9 +1,9 @@
 <template>
-  <main class="text-lightpurple dark:text-darkgray mt-6">
+  <main class="text-zinc-950 dark:text-zinc-100 mt-6">
     <TheAvatar />
     <TheDescription />
-    <SocialsContacts />
-    <TheScreenshot />
+    <!-- <SocialsContacts /> -->
+    <ThePortfolio />
     <TheMarquee />
     <TheCareer />
   </main>

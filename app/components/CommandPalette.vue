@@ -38,7 +38,7 @@ function onSelect(option) {
     ref="commandPaletteRef"
     :groups="groups"
     :autoselect="false"
-    class="min-h-[350px] bg-lightgray dark:bg-lightpurple rounded"
+    class="min-h-[350px] rounded"
     :empty-state="{ icon: 'i-heroicons-magnifying-glass-20-solid', label: 'No result.', queryLabel: 'No item found. Please try something else.' }"
     @update:model-value="onSelect"
   />

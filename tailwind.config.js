@@ -10,15 +10,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
-      colors: {
-        lightgray: 'var(--lightgray)',
-        darkgray: 'var(--darkgray)',
-        lightpurple: 'var(--lightpurple)',
-        mediumpurple: 'var(--mediumpurple)',
-        darkpurple: 'var(--darkpurple)',
-      },
+      colors: {},
       dropShadow: {
         purple: '0 8px 8px rgba(46, 16, 101, 0.25)',
+        white: '0 8px 8px rgba(250, 250, 250, 0.10)',
       },
     },
   },

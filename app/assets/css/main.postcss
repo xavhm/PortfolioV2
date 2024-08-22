@@ -4,19 +4,19 @@
 
 @layer components {
   .slide_btn {
-    @apply relative flex items-center justify-center overflow-hidden bg-transparent rounded cursor-pointer border border-l-purple-900/5 dark:border-mediumpurple hover:border-purple-900/10 dark:hover:border-lightpurple focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple;
+    @apply relative flex items-center justify-center overflow-hidden bg-transparent rounded cursor-pointer border border-l-purple-900/5 dark:border-purple-500 hover:border-purple-900/10 dark:hover:border-purple-300 focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-purple-300 dark:outline-purple-300;
   }
 
   .socials_btn {
-    @apply flex items-center justify-center p-2 bg-transparent rounded cursor-pointer border border-purple-900/5 dark:border-mediumpurple hover:border-purple-900/10 dark:hover:border-lightpurple focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple;
+    @apply flex items-center justify-center p-2 bg-transparent rounded cursor-pointer border border-purple-900/5 dark:border-purple-500 hover:border-purple-900/10 dark:hover:border-purple-300 focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-purple-300 dark:outline-purple-300;
   }
 
   .outlined {
-    @apply focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple rounded;
+    @apply focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-purple-300 dark:outline-purple-300 rounded;
   }
 
   .career_logo {
-    @apply border border-purple-900/5 dark:border-mediumpurple hover:border-purple-900/10 dark:hover:border-lightpurple p-2;
+    @apply border border-purple-900/5 dark:border-purple-500 hover:border-purple-900/10 dark:hover:border-purple-300 p-2;
   }
 }
 
@@ -27,12 +27,6 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  --lightgray: oklch(97.06% 0.002 67.8);
-  --darkgray: oklch(91.05% 0.005 78.3);
-  --lightpurple: oklch(41.06% 0.091 318.38);
-  --mediumpurple: oklch(29.29% 0.059 317.72);
-  --darkpurple: oklch(18.38% 0.03 318.24);
 }
 
 html.dark {
@@ -40,7 +34,7 @@ html.dark {
     background-image: 
       radial-gradient(
         farthest-corner circle at 50% 0%,
-        var(--darkpurple) 0%, var(--mediumpurple) 100%
+        rgb(39 39 42) 30%, rgb(9 9 11) 100%
       );
   }
 }
@@ -59,7 +53,7 @@ body {
   background-image: 
     radial-gradient(
       farthest-corner circle at 50% 0%,
-      rgb(250, 250, 250) 0%, rgb(228, 228, 231) 100%
+      rgb(250, 250, 250) 30%, rgb(228 228 231) 100%
     );
 }
 

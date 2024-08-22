@@ -50,6 +50,12 @@ export default defineNuxtConfig({
     viewTransition: true,
   },
 
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth',
+    },
+  },
+
   security: {
     nonce: true,
     headers: {
@@ -77,8 +83,8 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://www.xavhm.foo',
-    name: 'Xav_ | Frontend Web Development',
-    description: 'Xav_ | Frontend Web Development',
+    name: 'Xav_ Frontend Web Development',
+    description: 'Xav_ Frontend Web Development',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
 
