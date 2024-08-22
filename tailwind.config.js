@@ -17,6 +17,9 @@ module.exports = {
         mediumpurple: 'var(--mediumpurple)',
         darkpurple: 'var(--darkpurple)',
       },
+      dropShadow: {
+        purple: '0 8px 8px rgba(46, 16, 101, 0.25)',
+      },
     },
   },
   plugins: [],
