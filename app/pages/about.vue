@@ -5,7 +5,7 @@
         preload
         src="/midjourney_home.avif"
         quality="100"
-        height="940"
+        height="540"
         alt="home office by midjourney v5"
         placeholder
         class="sized"
