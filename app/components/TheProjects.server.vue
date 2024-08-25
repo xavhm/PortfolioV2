@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mt-2"
+    class="mt-10 md:mt-6"
     aria-label="projects gallery"
   >
     <article

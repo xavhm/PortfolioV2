@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="slide_btn h-[34px] w-[130px] text-sm text-purple-300 px-4 dark:text-zinc-900"
+    class="slide_btn h-[34px] w-[130px] text-sm text-slate-900 px-4 dark:text-slate-100"
     title="Copy Email address"
     arial-label="Copy Email address"
     :aria-pressed="isClicked"

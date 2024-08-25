@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mt-10"
+    class="mt-16"
     aria-label="my career path"
   >
     <h3 class="font-semibold mb-6">

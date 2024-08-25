@@ -1,12 +1,12 @@
 <template>
   <section
-    class="mt-10"
+    class="mt-16"
     aria-label="my tech stack"
   >
     <h3 class="font-semibold mb-6">
       Tech Stack
     </h3>
-    <div class="flex items-center justify-between gap-2 flex-wrap">
+    <div class="flex items-center justify-center md:justify-between gap-2 flex-wrap">
       <article
         class="socials_btn p-2"
         title="Typescript"

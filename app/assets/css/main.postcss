@@ -4,19 +4,11 @@
 
 @layer components {
   .slide_btn {
-    @apply relative flex items-center justify-center overflow-hidden bg-transparent rounded cursor-pointer border border-l-purple-900/5 dark:border-purple-500 hover:border-purple-900/10 dark:hover:border-purple-300 focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-purple-300 dark:outline-purple-300;
+    @apply relative flex items-center justify-center overflow-hidden bg-slate-100 dark:bg-slate-800 rounded-md shadow-sm cursor-pointer border border-slate-200 dark:border-slate-600 hover:border-slate-300 dark:hover:border-slate-500 focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-violet-800 dark:outline-slate-400 dark:hover:drop-shadow-white;
   }
 
   .socials_btn {
-    @apply flex items-center justify-center p-2 bg-transparent rounded cursor-pointer border border-purple-900/5 dark:border-purple-500 hover:border-purple-900/10 dark:hover:border-purple-300 focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-purple-300 dark:outline-purple-300;
-  }
-
-  .outlined {
-    @apply focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-purple-300 dark:outline-purple-300 rounded;
-  }
-
-  .career_logo {
-    @apply border border-purple-900/5 dark:border-purple-500 hover:border-purple-900/10 dark:hover:border-purple-300 p-2;
+    @apply flex items-center justify-center p-2 bg-slate-100 dark:bg-slate-800 rounded-md shadow-sm cursor-pointer border border-slate-200 dark:border-slate-600 hover:border-slate-300 dark:hover:border-slate-500 focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-violet-800 dark:outline-slate-400 dark:hover:drop-shadow-white;
   }
 }
 
@@ -31,11 +23,7 @@ html {
 
 html.dark {
   body {
-    background-image: 
-      radial-gradient(
-        farthest-corner circle at 50% 0%,
-        rgb(39 39 42) 30%, rgb(9 9 11) 100%
-      );
+    @apply bg-slate-800;
   }
 }
 
@@ -48,13 +36,9 @@ html.dark {
 }
 
 body {
+  @apply bg-slate-50;
   min-height: 100dvh;
   font-family: 'Satoshi', sans-serif;
-  background-image: 
-    radial-gradient(
-      farthest-corner circle at 50% 0%,
-      rgb(250, 250, 250) 30%, rgb(228 228 231) 100%
-    );
 }
 
 @supports (text-wrap: balance) {

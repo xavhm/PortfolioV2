@@ -1,5 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    },
+  },
+
   future: {
     compatibilityVersion: 4,
   },
@@ -83,8 +90,8 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://www.xavhm.foo',
-    name: 'Xav_ Frontend Web Development',
-    description: 'Xav_ Frontend Web Development',
+    name: 'Xav_ Web Development',
+    description: 'Xav_ Web Development',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
 
