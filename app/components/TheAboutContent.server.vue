@@ -4,11 +4,21 @@
     aria-label="projects gallery"
   >
     <p
-      class="text-xl mb-6"
+      class="font-semibold mb-12"
       title="Live long and prosper"
     >
-      🖖
+      <span class="text-xl">🖖</span> A bit about me...
     </p>
+    <h3 class="font-semibold mb-2">
+      What are your aiming for in this new career?
+    </h3>
+    <p class="text-sm leading-6 mb-2">
+      I aim to create seamless and engaging user experiences that bridge the gap between design and functionality, ultimately enhancing the way users interact with digital products.
+    </p>
+    <p class="text-sm leading-6 mb-6">
+      On the technical side, I aspire to master fullstack development, delving into server-side technologies like Go or Rust, and exploring web innovations such as WebAssembly.
+    </p>
+
     <h3 class="font-semibold mb-2">
       What was your previous career in LiveOps all about?
     </h3>
@@ -33,16 +43,6 @@
     </p>
     <p class="text-sm leading-6 mb-6">
       Finally, both operate in an agile and cross-functional environment with product and marketing teams.
-    </p>
-
-    <h3 class="font-semibold mb-2">
-      What are your aiming for in this new career?
-    </h3>
-    <p class="text-sm leading-6 mb-2">
-      I aim to create seamless and engaging user experiences that bridge the gap between design and functionality, ultimately enhancing the way users interact with digital products.
-    </p>
-    <p class="text-sm leading-6 mb-6">
-      On the technical side, I aspire to master fullstack development, delving into server-side technologies like Go or Rust, and exploring web innovations such as WebAssembly.
     </p>
 
     <h3 class="font-semibold mb-2">
