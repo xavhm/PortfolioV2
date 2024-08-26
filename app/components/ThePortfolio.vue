@@ -10,10 +10,10 @@
       v-for="project in projects"
       :key="project.id"
       :to="`projects#${project.id}`"
+      :aria-label="`Learn more about ${project.name} project`"
     >
       <article
         class="relative group border-b border-slate-200 dark:border-slate-600 py-1 pb-4 mb-2 cursor-pointer"
-        :arial-label="`Learn more about ${project.name} project`"
       >
         <h3 class="font-semibold text-sm">
           {{ project.name }}
