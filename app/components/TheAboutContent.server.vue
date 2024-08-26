@@ -4,7 +4,7 @@
     aria-label="projects gallery"
   >
     <p
-      class="title"
+      class="font-semibold mb-8"
       title="Live long and prosper"
     >
       <span class="text-xl">🖖</span> A bit about me...
@@ -57,7 +57,7 @@
   </section>
 </template>
 
-<style lang="postcss scoped">
+<style lang="postcss" scoped>
 .title {
   @apply font-semibold mb-2;
 }
