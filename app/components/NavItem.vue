@@ -1,6 +1,6 @@
 <template>
   <NuxtLink
-    class="group cursor-pointer outline-none focus-visible:underline focus-visible:outline-none"
+    class="group cursor-pointer outline-none focus-visible:underline underline-offset-4 decoration-violet-800 dark:decoration-slate-400 focus-visible:outline-none"
     :to="props.route"
     :arial-label="`navigation to ${props.label} page`"
   >

@@ -88,8 +88,8 @@ const isNavigating = computed(() => router.currentRoute.value.name !== 'index')
 
 <style lang="postcss" scoped>
 .nav_button {
-  @apply h-10 w-10 bg-white dark:bg-slate-950 rounded-full shadow-md grid place-items-center cursor-pointer motion-safe:transition-all motion-safe:duration-300 hover:motion-safe:scale-105
-  focus-visible:outline focus-visible:outline-2 outline-offset-2 outline-violet-800 dark:outline-slate-100 hover:drop-shadow-purple dark:hover:drop-shadow-white;
+  @apply h-10 w-10 bg-slate-100 dark:bg-slate-700 rounded-full shadow-sm dark:shadow-slate-900 border border-slate-200 dark:border-slate-600 hover:border-slate-300 dark:hover:border-slate-500 grid place-items-center cursor-pointer motion-safe:transition-all motion-safe:duration-300 hover:motion-safe:scale-105
+  focus-visible:outline focus-visible:outline-1 outline-offset-2 outline-violet-800 dark:outline-slate-400 hover:drop-shadow-purple dark:hover:drop-shadow-white;
 }
 
 .nav_item {
