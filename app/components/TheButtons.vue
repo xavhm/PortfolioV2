@@ -6,21 +6,6 @@
     <MailButton />
     <NuxtLink
       class="h-[34px] socials_btn text-sm"
-      title="Download resume"
-      tabindex="0"
-      to="/XavierHM-CV-EN.pdf"
-      target="_blank"
-    >
-      Get Resume
-      <Icon
-        class="ml-2"
-        :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
-        name="lucide:file-down"
-        size="16px"
-      />
-    </NuxtLink>
-    <NuxtLink
-      class="h-[34px] socials_btn text-sm"
       title="Learn more about me"
       tabindex="0"
       to="about"

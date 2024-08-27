@@ -10,7 +10,7 @@
       <article
         v-for="logo in logos"
         :key="logo.id"
-        class="socials_btn p-2"
+        class="logo p-2"
         :title="logo.label"
       >
         <component
