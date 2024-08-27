@@ -13,7 +13,10 @@
         class="socials_btn p-2"
         :title="logo.label"
       >
-        <component :is="logo.component" />
+        <component
+          :is="logo.component"
+          aria-hidden="true"
+        />
       </article>
     </div>
   </section>
