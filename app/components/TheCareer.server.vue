@@ -6,11 +6,15 @@
     <h3 class="font-semibold mb-6 gradient_text">
       Career
     </h3>
-    <article class="flex flex-col items-start gap-2 mb-10">
-      <div class="w-full flex flex-row-reverse items-center justify-between text-sm gap-4 mb-2">
-        <div class="w-fit rounded-md overflow-hidden mb-2 career_logo">
+    <article
+      v-for="job in jobs"
+      :key="job.id"
+      class="w-full grid grid-cols-[200px_1fr] gap-2 mb-10"
+    >
+      <div class="flex flex-col items-start gap-1">
+        <div class="border border-slate-200 dark:border-slate-600 p-1 rounded-md mb-2">
           <NuxtPicture
-            src="/raccourci_logo.png"
+            :src="job.logo"
             quality="90"
             height="40"
             width="40"
@@ -18,110 +22,23 @@
             placeholder
           />
         </div>
-        <div class="flex flex-col items-start gap-1">
-          <p class="font-semibold">
-            Frontend Engineer @Raccourci Agency
-          </p>
-          <p>
-            Nov 2021 - Now
-          </p>
-          <p>
-            La Rochelle, France
-          </p>
-        </div>
-      </div>
-      <div class="leading-6 text-sm flex flex-col gap-1">
-        <p>I developed features and user interfaces for multiple web applications, collaborating closely with designers, to translate prototypes into functional, pixel-perfect frontends.</p>
-        <p>Additionally, I built and maintained a reusable component library, enabling consistent UI across several applications and streamlining developer workflows. I also implemented accessibility features and best practices like WCAG and ARIA, to create inclusive user experiences.</p>
-      </div>
-    </article>
-    <article class="flex flex-col items-start gap-2 mb-10">
-      <div class="w-full flex flex-row-reverse items-center justify-between text-sm gap-4 mb-2">
-        <div class="w-fit rounded-md overflow-hidden mb-2 career_logo">
-          <NuxtPicture
-            src="/oc_logo.png"
-            quality="90"
-            height="40"
-            width="40"
-            alt="Openclassroom Logo"
-            placeholder
-          />
-        </div>
-        <div class="flex flex-col items-start gap-1">
-          <p class="font-semibold">
-            Frontend Development pro. contract @Openclassrooms
-          </p>
-          <p>
-            Nov 2021 - Feb 2023
-          </p>
-          <p>
-            La Rochelle, France
-          </p>
-        </div>
-      </div>
-      <div class="leading-6 text-sm">
-        <p class="mb-2">
-          A formation centered around web application development with JavaScript and React. I gained hands-on experience in developing responsive web applications, creating pixel-perfect interfaces from wireframes, using APIs, and structuring frontend projects.
+        <p class="text-sm">
+          {{ job.from }} - {{ job.to }}
         </p>
-        <p>The program emphasized project-based learning and included mentorship from industry professionals.</p>
+        <p class="text-sm">
+          {{ job.location }}
+        </p>
       </div>
-    </article>
-    <article class="flex flex-col items-start gap-2 mb-10">
-      <div class="w-full flex flex-row-reverse items-center justify-between text-sm gap-4 mb-2">
-        <div class="w-fit rounded-md overflow-hidden mb-2 career_logo">
-          <NuxtPicture
-            src="/wagon_logo.png"
-            quality="90"
-            height="40"
-            width="40"
-            alt="Le Wagon Logo"
-            placeholder
-          />
-        </div>
-        <div class="flex flex-col items-start gap-1">
-          <p class="font-semibold">
-            Web Development Bootcamp @LeWagon
-          </p>
-          <p>
-            March 2021 - June 2021
-          </p>
-          <p>
-            Bordeaux, France
-          </p>
-        </div>
-      </div>
-      <div class="leading-6 text-sm">
-        <p>Le Wagon is a famous international bootcamp where I learned about programming fundamentals and building fullstack web applications. We worked with Ruby on Rails, JavaScript, HTML, CSS and SQL. The intensive curriculum emphasized real-world projects and team work.</p>
-      </div>
-    </article>
-    <article class="flex flex-col items-start gap-2 mb-12">
-      <div class="w-full flex flex-row-reverse items-center justify-between text-sm gap-4 mb-2">
-        <div class="w-fit rounded-md overflow-hidden mb-2 career_logo">
-          <NuxtPicture
-            src="/wina_logo.png"
-            quality="90"
-            height="40"
-            width="40"
-            alt="Winamax Logo"
-            placeholder
-          />
-        </div>
-        <div class="flex flex-col items-start gap-1">
-          <p class="font-semibold">
-            LiveOPS Manager @Winamax
-          </p>
-          <p>
-            August 2009 - Sep 2019
-          </p>
-          <p>
-            London and Paris
-          </p>
-        </div>
-      </div>
-      <div class="leading-6 text-sm">
-        <p>
-          I worked 10 years on developing a comprehensive offering and events strategy for the online poker French market leader, keeping players engaged with the brand.
-          I collaborated with developers, designers, and marketers to deliver new gaming products and optimize metrics like participation rates, revenue impact, and retention.
+
+      <div class="leading-6 text-sm flex flex-col items-start gap-1">
+        <p class="font-semibold">
+          {{ job.label }} @{{ job.society }}
+        </p>
+        <p
+          v-for="(content, index) in job.contents"
+          :key="index"
+        >
+          {{ content }}
         </p>
       </div>
     </article>
@@ -129,9 +46,33 @@
 </template>
 
 <script setup lang='ts'>
-
+const jobs = [
+  {
+    id: 1, label: 'Frontend Engineer', society: 'Raccourci Agency', location: 'La Rochelle, France', from: 'Nov 2021', to: 'Now', logo: '/raccourci_logo.png',
+    contents: [
+      'I developed features and user interfaces for multiple web applications, collaborating closely with designers, to translate prototypes into functional, pixel-perfect frontends.',
+      'Additionally, I built and maintained a reusable component library, enabling consistent UI across several applications and streamlining developer workflows. I also implemented accessibility features and best practices like WCAG and ARIA, to create inclusive user experiences.',
+    ],
+  },
+  {
+    id: 2, label: 'Frontend Dev pro. contract', society: 'Openclassrooms', location: 'La Rochelle, France', from: 'Nov 2021', to: 'Feb 2023', logo: '/oc_logo.png',
+    contents: [
+      'A formation centered around web application development with JavaScript and React. I gained hands-on experience in developing responsive web applications, creating pixel-perfect interfaces from wireframes, using APIs, and structuring frontend projects.',
+      'The program emphasized project-based learning and included mentorship from industry professionals.',
+    ],
+  },
+  {
+    id: 3, label: 'Web Development Bootcamp', society: 'Le Wagon', location: 'Bordeaux, France', from: 'April 2021', to: 'July 2021', logo: '/wagon_logo.png',
+    contents: [
+      'Le Wagon is a famous international bootcamp where I learned about programming fundamentals and building fullstack web applications. We worked with Ruby on Rails, JavaScript, HTML, CSS and SQL. The intensive curriculum emphasized real-world projects and team work.',
+    ],
+  },
+  {
+    id: 4, label: 'LiveOPS Manager', society: 'Winamax', location: 'London and Paris', from: 'Aug 2009', to: 'Sep 2019', logo: '/wina_logo.png',
+    contents: [
+      'I worked 10 years on developing a comprehensive offering and events strategy for the online poker French market leader, keeping players engaged with the brand.',
+      'I collaborated with developers, designers, and marketers to deliver new gaming products and optimize metrics like participation rates, revenue impact, and retention.',
+    ],
+  },
+]
 </script>
-
-<style>
-
-</style>

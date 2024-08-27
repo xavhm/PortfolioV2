@@ -63,12 +63,6 @@
         </li>
       </ul>
     </nav>
-    <!-- <section
-      class="flex items-center gap-2"
-      aria-label="display settings"
-    >
-      <ColorSelector />
-    </section> -->
   </header>
   <UModal v-model="isOpen">
     <CommandPalette
