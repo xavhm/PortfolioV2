@@ -11,7 +11,7 @@
       to="/XavierHM-CV-EN.pdf"
       target="_blank"
     >
-      Resume
+      Get Resume
       <Icon
         class="ml-2"
         :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
@@ -25,7 +25,7 @@
       tabindex="0"
       to="about"
     >
-      About
+      Read More
       <Icon
         class="ml-2"
         :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"

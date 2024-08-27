@@ -8,83 +8,45 @@
     </h3>
     <div class="flex items-center justify-center md:justify-between gap-2 flex-wrap">
       <article
+        v-for="logo in logos"
+        :key="logo.id"
         class="socials_btn p-2"
-        title="Typescript"
+        :title="logo.label"
       >
-        <SvgTypescriptLogo />
-      </article>
-      <article
-        class="socials_btn p-2"
-        title="Node"
-      >
-        <SvgNodeLogo />
-      </article>
-      <article
-        class="socials_btn p-2"
-        title="Vite"
-      >
-        <SvgViteLogo />
-      </article>
-      <article
-        class="socials_btn p-2"
-        title="TailwindCSS"
-      >
-        <SvgTailwindLogo />
-      </article>
-      <article
-        class="socials_btn p-2"
-        title="Scss"
-      >
-        <SvgScssLogo />
-      </article>
-      <article
-        class="socials_btn p-2"
-        title="Vue"
-      >
-        <SvgVueLogo />
-      </article>
-      <article
-        class="socials_btn p-2"
-        title="Nuxt"
-      >
-        <SvgNuxtLogo />
-      </article>
-      <article
-        class="socials_btn p-2"
-        title="React"
-      >
-        <SvgReactLogo />
-      </article>
-      <article
-        class="socials_btn p-2"
-        title="Web Components"
-      >
-        <SvgWebcomponentsLogo />
-      </article>
-      <article
-        class="socials_btn p-2"
-        title="Vitest"
-      >
-        <SvgVitestLogo />
-      </article>
-      <article
-        class="socials_btn p-2"
-        title="Storybook"
-      >
-        <SvgStorybookLogo />
-      </article>
-      <article
-        class="socials_btn p-2"
-        title="Docker"
-      >
-        <SvgDockerLogo />
+        <component :is="logo.component" />
       </article>
     </div>
   </section>
 </template>
 
 <script setup lang='ts'>
+import TypescriptLogo from '@/components/svg/TypescriptLogo.vue'
+import NodeLogo from '@/components/svg/NodeLogo.vue'
+import ViteLogo from '@/components/svg/ViteLogo.vue'
+import TailwindLogo from '@/components/svg/TailwindLogo.vue'
+import ScssLogo from '@/components/svg/ScssLogo.vue'
+import VueLogo from '@/components/svg/VueLogo.vue'
+import NuxtLogo from '@/components/svg/NuxtLogo.vue'
+import ReactLogo from '@/components/svg/ReactLogo.vue'
+import WebcomponentsLogo from '@/components/svg/WebcomponentsLogo.vue'
+import VitestLogo from '@/components/svg/VitestLogo.vue'
+import StorybookLogo from '@/components/svg/StorybookLogo.vue'
+import DockerLogo from '@/components/svg/DockerLogo.vue'
 
+const logos = [
+  { id: 1, label: 'Typescript', component: TypescriptLogo },
+  { id: 2, label: 'NodeJS', component: NodeLogo },
+  { id: 3, label: 'Vite', component: ViteLogo },
+  { id: 4, label: 'TailwindCSS', component: TailwindLogo },
+  { id: 5, label: 'Sass', component: ScssLogo },
+  { id: 6, label: 'Vue', component: VueLogo },
+  { id: 7, label: 'Nuxt', component: NuxtLogo },
+  { id: 8, label: 'React', component: ReactLogo },
+  { id: 9, label: 'Web Components', component: WebcomponentsLogo },
+  { id: 10, label: 'Vitest', component: VitestLogo },
+  { id: 11, label: 'Storybook', component: StorybookLogo },
+  { id: 12, label: 'Docker', component: DockerLogo },
+]
 </script>
 
 <style>
