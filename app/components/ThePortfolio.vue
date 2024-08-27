@@ -3,7 +3,7 @@
     class="w-full mt-16"
     aria-label="links to the projects gallery"
   >
-    <h3 class="font-semibold mb-6">
+    <h3 class="font-semibold mb-6 gradient_text">
       Projects
     </h3>
     <NuxtLink

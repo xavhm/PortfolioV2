@@ -7,7 +7,7 @@
       class="font-semibold mb-8"
       title="Live long and prosper"
     >
-      <span class="text-xl">🖖</span> A bit about me...
+      A bit about me...
     </p>
     <h3 class="title">
       What are your aiming for in this new career?
@@ -54,12 +54,18 @@
     <p class="last_paragraph">
       More broadly, I have a strong interest in technology and sciences, likes Web3, IA, physics and philosophy.
     </p>
+    <p
+      class="text-xl mt-10"
+      title="Live long and prosper"
+    >
+      🖖
+    </p>
   </section>
 </template>
 
 <style lang="postcss" scoped>
 .title {
-  @apply font-semibold mb-2;
+  @apply font-semibold mb-4;
 }
 
 .paragraph {

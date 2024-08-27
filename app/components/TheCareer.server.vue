@@ -3,7 +3,7 @@
     class="mt-16"
     aria-label="my career path"
   >
-    <h3 class="font-semibold mb-6">
+    <h3 class="font-semibold mb-6 gradient_text">
       Career
     </h3>
     <article class="flex flex-col items-start gap-2 mb-10">

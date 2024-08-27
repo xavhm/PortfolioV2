@@ -3,7 +3,7 @@
     class="mt-16"
     aria-label="my tech stack"
   >
-    <h3 class="font-semibold mb-6">
+    <h3 class="font-semibold mb-6 gradient_text">
       Tech Stack
     </h3>
     <div class="flex items-center justify-center md:justify-between gap-2 flex-wrap">
