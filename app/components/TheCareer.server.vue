@@ -27,6 +27,7 @@
       v-for="job in jobs"
       :key="job.id"
       class="w-full grid sm:grid-cols-[200px_1fr] gap-2 mb-10"
+      :aria-label="`${job.label} at ${job.society}`"
     >
       <div class="flex flex-col items-start gap-1">
         <div class="border border-slate-200 dark:border-slate-600 p-1 rounded-md mb-2">
