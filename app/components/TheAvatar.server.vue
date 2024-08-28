@@ -6,10 +6,10 @@
     <p class="text-lg mb-6">
       👾
     </p>
-    <h1 class="w-fit text-xl font-bold gradient_text">
+    <h1 class="w-fit text-xl font-bold">
       Xavier Hernandez
     </h1>
-    <h2 class="text-zinc-950 dark:text-zinc-100 font-semibold">
+    <h2 class="font-semibold gradient_text">
       Frontend Engineer
     </h2>
   </section>

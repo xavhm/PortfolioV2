@@ -27,11 +27,11 @@
             aria-label="Toggle Color mode"
             type="button"
             class="nav_button"
-            :aria-pressed="$colorMode.preference === 'light' ? false : true"
-            @click="$colorMode.preference === 'light' ? $colorMode.preference = 'dark' : $colorMode.preference = 'light'"
+            :aria-pressed="$colorMode.value === 'light' ? false : true"
+            @click="$colorMode.value === 'light' ? $colorMode.preference = 'dark' : $colorMode.preference = 'light'"
           >
             <Icon
-              v-if="$colorMode.preference === 'dark'"
+              v-if="$colorMode.value === 'dark'"
               :style="$colorMode.value === 'dark' ? 'color:#f1f5f9;' : 'color:#1f2937;'"
               name="lucide:moon"
               size="18px"

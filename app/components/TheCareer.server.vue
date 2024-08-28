@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mt-16"
+    class="my-16"
     aria-label="my career path"
   >
     <div class="w-full flex items-start justify-between mb-6">
