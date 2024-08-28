@@ -14,7 +14,7 @@
           >
             <Icon
               :style="$colorMode.value === 'dark' ? 'color:#f1f5f9;' : 'color:#1f2937;'"
-              name="i-lucide:house"
+              name="i-lucide:home"
               size="18px"
             />
           </NuxtLink>
