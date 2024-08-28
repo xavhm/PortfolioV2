@@ -22,7 +22,7 @@ export default function useProjectList() {
       url: null,
       repository: null,
       details: 'An internal ERP for catalog management and invoices.',
-      description: 'Internal ERP application for managing the service catalog and creating invoices by the sales teams for the Raccourci agency.',
+      description: 'Internal ERP application for managing the services catalog and sales team\'s invoices.',
       work: ['Project architecture', 'Features development', 'Bug fixing', 'CI/CD Implementation', 'Testing'],
     },
     {
@@ -34,7 +34,7 @@ export default function useProjectList() {
       url: 'https://www.touristicmaps.com/',
       repository: null,
       details: 'A fullstack project with Rust and Vue.',
-      description: 'Fullstack project with a Rust API (Rocket) and MongoDB for the TouristicsMap application, which allows for the editing and management of configurations for displaying topographic maps.',
+      description: 'Fullstack project with a Rust API (Rocket) and MongoDB for the TouristicsMap application, which allows for the editing and management of configurations for topographic maps.',
       work: ['Project architecture', 'Backend development', 'UI/UX Design', 'CI/CD Implementation', 'Testing'],
     },
     {
@@ -46,7 +46,7 @@ export default function useProjectList() {
       url: 'https://terres-de-seine.youbook.travel/fr',
       repository: null,
       details: 'An e-commerce platform for the tourism industry.',
-      description: 'E-commerce platform for tourism professionals, to sell sport and touristic activites.',
+      description: 'E-commerce platform for tourism professionals, to sell sport and leisure activites.',
       work: ['Prototyping', 'Bug Fixing', 'Web Components', 'Testing'],
     },
     {

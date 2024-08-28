@@ -1,16 +1,27 @@
 <template>
   <section
-    class="mt-10 md:mt-6"
+    class="my-10 md:my-6"
     aria-label="projects gallery"
   >
     <article
       v-for="project in projects"
       :id="project.id"
       :key="project.name"
-      class="mb-8"
+      class="border-b border-dashed border-slate-200 dark:border-slate-700 p-2 pb-4 mb-8"
     >
+      <div class="relative rounded-md overflow-hidden entering">
+        <NuxtPicture
+          preload
+          :src="project.screenshot"
+          quality="100"
+          height="960"
+          :alt="`${project.name} project screenshot`"
+          placeholder
+          class="sized"
+        />
+      </div>
       <div class="flex items-center justify-between text-sm py-2">
-        <h3 class="text-base font-semibold italic">
+        <h3 class="text-base font-semibold italic gradient_text">
           {{ project.name }}
         </h3>
         <div class="flex item-center gap-2">
@@ -23,7 +34,7 @@
             target="_blank"
           >
             <Icon
-              :color="$colorMode.value === 'dark' ? '#FFF' : '#3b0764'"
+              :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
               name="lucide:github"
               size="16px"
             />
@@ -44,22 +55,11 @@
           </NuxtLink>
         </div>
       </div>
-      <div class="relative rounded-md overflow-hidden">
-        <NuxtPicture
-          preload
-          :src="project.screenshot"
-          quality="100"
-          height="960"
-          :alt="`${project.name} project screenshot`"
-          placeholder
-          class="sized"
-        />
-      </div>
       <div class="text-sm py-2">
-        <p class="mb-1">
-          <span class="font-semibold">Role</span>: {{ project.role }}
+        <p class="leading-6 pb-2">
+          {{ project.description }}
         </p>
-        <div class="flex flex-wrap items-center gap-2">
+        <div class="flex flex-wrap items-center gap-2 mb-2">
           <p class="font-semibold">
             Stack:
           </p>
@@ -71,10 +71,10 @@
             {{ tech }}
           </div>
         </div>
-        <p class="leading-6 py-2">
-          <span class="font-semibold">Pitch</span>: {{ project.description }}
+        <p class="mb-2">
+          <span class="font-semibold">Role</span>: {{ project.role }}
         </p>
-        <div class="flex flex-wrap items-center gap-2">
+        <div class="flex flex-wrap items-center gap-2 mb-2">
           <p class="font-semibold">
             Tasks:
           </p>
@@ -104,6 +104,6 @@ const { projects } = useProjectsList()
   }
 
   .pill {
-    @apply bg-white dark:bg-zinc-900 dark:text-zinc-100 rounded-xl border border-purple-300 dark:border-white px-2 text-sm;
+    @apply bg-white dark:bg-slate-700 dark:text-slate-100 rounded-md border border-dashed border-violet-400 dark:border-slate-600 px-2 text-sm;
   }
 </style>

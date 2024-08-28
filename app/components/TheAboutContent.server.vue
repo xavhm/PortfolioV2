@@ -4,8 +4,7 @@
     aria-label="projects gallery"
   >
     <p
-      class="font-semibold mb-8"
-      title="Live long and prosper"
+      class="font-semibold mb-8 gradient_text"
     >
       A bit about me...
     </p>
