@@ -18,7 +18,7 @@
         <Icon
           class="ml-2"
           :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
-          name="lucide:file-down"
+          name="i-lucide:file-down"
           size="16px"
         />
       </NuxtLink>

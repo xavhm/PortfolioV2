@@ -16,7 +16,7 @@
       <span class="inline-block ml-2">
         <Icon
           class="relative top-[2px]"
-          name="lucide:mail-open"
+          name="i-lucide:mail-open"
           :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
           size="16px"
         />
@@ -30,7 +30,7 @@
       <span class="inline-block ml-2">
         <Icon
           class="relative top-[2px]"
-          name="lucide:copy-check"
+          name="i-lucide:copy-check"
           :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
           size="16px"
         />

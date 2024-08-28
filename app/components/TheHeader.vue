@@ -14,7 +14,7 @@
           >
             <Icon
               :style="$colorMode.value === 'dark' ? 'color:#f1f5f9;' : 'color:#1f2937;'"
-              name="lucide:house"
+              name="i-lucide:house"
               size="18px"
             />
           </NuxtLink>
@@ -33,13 +33,13 @@
             <Icon
               v-if="$colorMode.value === 'dark'"
               :style="$colorMode.value === 'dark' ? 'color:#f1f5f9;' : 'color:#1f2937;'"
-              name="lucide:moon"
+              name="i-lucide:moon"
               size="18px"
             />
             <Icon
               v-else
               :style="$colorMode.value === 'dark' ? 'color:#f1f5f9;' : 'color:#1f2937;'"
-              name="lucide:sun"
+              name="i-lucide:sun"
               size="18px"
             />
           </button>
@@ -56,7 +56,7 @@
           >
             <Icon
               :style="$colorMode.value === 'dark' ? 'color:#f1f5f9;' : 'color:#1f2937;'"
-              name="lucide:menu"
+              name="i-lucide:menu"
               size="18px"
             />
           </button>

@@ -45,6 +45,12 @@ export default defineNuxtConfig({
     },
   },
 
+  icon: {
+    serverBundle: {
+      collections: ['heroicons', 'lucide'],
+    },
+  },
+
   eslint: {
     config: {
       stylistic: true,

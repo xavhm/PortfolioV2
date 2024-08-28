@@ -25,7 +25,7 @@
         <Icon
           class="absolute top-2 right-4 group-hover:motion-safe:translate-x-2 group-hover:motion-safe:scale-75 duration-300 ease-out"
           :color="$colorMode.value === 'dark' ? '#f1f5f9' : '#5b21b6'"
-          name="lucide:arrow-right"
+          name="i-lucide:arrow-right"
           size="16px"
         />
 

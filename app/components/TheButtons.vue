@@ -14,7 +14,7 @@
       <Icon
         class="ml-2"
         :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
-        name="lucide:circle-user-round"
+        name="i-lucide:circle-user-round"
         size="16px"
       />
     </NuxtLink>
