@@ -4,19 +4,26 @@
 
 @layer components {
   .slide_btn {
-    @apply relative flex items-center justify-center overflow-hidden bg-transparent rounded cursor-pointer border border-l-purple-900/5 dark:border-mediumpurple hover:border-purple-900/10 dark:hover:border-lightpurple focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple;
+    @apply relative flex items-center justify-center overflow-hidden bg-slate-100 dark:bg-slate-700 rounded-md shadow-sm dark:shadow-slate-900 cursor-pointer border border-slate-200 dark:border-slate-600 hover:border-slate-300 dark:hover:border-slate-500 focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-violet-800 dark:outline-slate-400;
   }
 
   .socials_btn {
-    @apply flex items-center justify-center p-2 bg-transparent rounded cursor-pointer border border-purple-900/5 dark:border-mediumpurple hover:border-purple-900/10 dark:hover:border-lightpurple focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple;
+    @apply relative flex items-center justify-center p-2 bg-slate-100 dark:bg-slate-700 rounded-md shadow-sm dark:shadow-slate-900 cursor-pointer border border-slate-200 dark:border-slate-600 hover:border-slate-300 dark:hover:border-slate-500 focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-violet-800 dark:outline-slate-400;
   }
 
-  .outlined {
-    @apply focus-visible:outline focus-visible:outline-1 outline-offset-1 outline-lightpurple dark:outline-lightpurple rounded;
+  .logo {
+    @apply rounded-md border border-slate-200 dark:border-slate-700;
   }
 
-  .career_logo {
-    @apply border border-purple-900/5 dark:border-mediumpurple hover:border-purple-900/10 dark:hover:border-lightpurple p-2;
+  .gradient_text {
+    @apply text-transparent bg-clip-text bg-gradient-to-t from-violet-950 to-violet-400 dark:from-zinc-400 dark:to-zinc-100;
+  }
+
+  .entering { animation: 1.2s entering ease-out; }
+
+  @keyframes entering {
+    0% { clip-path: inset(0 0 100% 0); }
+    100% { clip-path: inset(0); }
   }
 }
 
@@ -27,21 +34,11 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-
-  --lightgray: oklch(97.06% 0.002 67.8);
-  --darkgray: oklch(91.05% 0.005 78.3);
-  --lightpurple: oklch(41.06% 0.091 318.38);
-  --mediumpurple: oklch(29.29% 0.059 317.72);
-  --darkpurple: oklch(18.38% 0.03 318.24);
 }
 
 html.dark {
   body {
-    background-image: 
-      radial-gradient(
-        farthest-corner circle at 50% 0% in oklab,
-        var(--darkpurple) 0%, var(--mediumpurple) 100%
-      );
+    @apply bg-slate-800;
   }
 }
 
@@ -54,13 +51,9 @@ html.dark {
 }
 
 body {
+  @apply bg-slate-50;
   min-height: 100dvh;
   font-family: 'Satoshi', sans-serif;
-  background-image: 
-    radial-gradient(
-      farthest-corner circle at 50% 0% in oklab,
-      oklch(100% 0.00 68) 0%, oklch(89% 0.00 68) 100%
-    );
 }
 
 @supports (text-wrap: balance) {

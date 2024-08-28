@@ -8,13 +8,13 @@
 <script setup lang="ts">
 useHeadSafe({
   link: [
-    { rel: 'icon', type: 'image/avif', href: 'favicon.avif' },
+    { rel: 'icon', type: 'image/png', href: './favicon-32x32.png', sizes: 'any' },
   ],
 })
 useSeoMeta({
-  ogTitle: 'Xav\'s Portfolio',
-  description: 'Xav\'s Portfolio - Frontend Development.',
-  ogDescription: 'Xav\'s Portfolio - Frontend Development.',
+  ogTitle: 'Xav_ Web Development',
+  description: 'Xav_ Web Development',
+  ogDescription: 'Xav_ Web Development',
   ogImage: 'https://www.xavhm.foo/midjourney_home.avif',
   twitterCard: 'summary_large_image',
 })

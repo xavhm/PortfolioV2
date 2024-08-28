@@ -1,5 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    },
+  },
+
   future: {
     compatibilityVersion: 4,
   },
@@ -25,6 +32,7 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     'nuxt-security',
     '@nuxtjs/seo',
+    '@nuxt/ui',
   ],
 
   devtools: {
@@ -49,7 +57,29 @@ export default defineNuxtConfig({
     viewTransition: true,
   },
 
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth',
+    },
+  },
+
+  security: {
+    nonce: true,
+    headers: {
+      contentSecurityPolicy: {
+        'style-src': process.env.NODE_ENV === 'development'
+          ? ['\'self\'', '\'unsafe-inline\'']
+          : ['\'self\'', '\'unsafe-inline\'', 'nonce-{{nonce}}'],
+        'script-src': process.env.NODE_ENV === 'development'
+          ? ['\'self\'', '\'unsafe-inline\'']
+          : ['\'self\'', '\'unsafe-inline\'', 'nonce-{{nonce}}'],
+      },
+    },
+  },
+
   colorMode: {
+    preference: 'light',
+    fallback: 'light',
     classSuffix: '',
   },
 
@@ -62,8 +92,8 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://www.xavhm.foo',
-    name: 'Xav\'s Portfolio',
-    description: 'Frontend Developer!',
+    name: 'Xav_ Web Development',
+    description: 'Xav_ Web Development',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
   },
 

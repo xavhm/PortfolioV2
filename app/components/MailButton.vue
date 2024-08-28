@@ -1,7 +1,7 @@
 <template>
   <button
     type="button"
-    class="slide_btn h-[34px] w-[130px] text-sm text-lightpurple px-4 dark:text-darkgray"
+    class="slide_btn h-[34px] w-[130px] text-sm text-slate-900 px-4 dark:text-slate-100"
     title="Copy Email address"
     arial-label="Copy Email address"
     :aria-pressed="isClicked"
@@ -17,7 +17,7 @@
         <Icon
           class="relative top-[2px]"
           name="lucide:mail-open"
-          :color="$colorMode.value === 'dark' ? '#FFF' : '#3b0764'"
+          :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
           size="16px"
         />
       </span>
@@ -31,7 +31,7 @@
         <Icon
           class="relative top-[2px]"
           name="lucide:copy-check"
-          :color="$colorMode.value === 'dark' ? '#FFF' : '#3b0764'"
+          :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
           size="16px"
         />
       </span>
