@@ -21,6 +21,27 @@
       </div>
       <p class="text-slate-500 dark:text-slate-400">
         Out of complexity, find simplicity.
+        <Icon
+          class="h-0 w-0 opacity-0"
+          aria-hidden="true"
+          :color="$colorMode.value === 'dark' ? '#f1f5f9' : '#5b21b6'"
+          name="i-lucide:home"
+          size="0px"
+        />
+        <Icon
+          class="h-0 w-0 opacity-0"
+          aria-hidden="true"
+          :color="$colorMode.value === 'dark' ? '#f1f5f9' : '#5b21b6'"
+          name="i-lucide:moon"
+          size="0px"
+        />
+        <Icon
+          class="h-0 w-0 opacity-0"
+          aria-hidden="true"
+          :color="$colorMode.value === 'dark' ? '#f1f5f9' : '#5b21b6'"
+          name="i-lucide:briefcase-business"
+          size="0px"
+        />
       </p>
     </div>
   </footer>

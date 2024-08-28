@@ -5,11 +5,11 @@ const emits = defineEmits(['close'])
 const users = [
   { id: 'home', label: 'Home', icon: 'i-lucide:home', to: '/' },
   { id: 'projects', label: 'Projects', icon: 'i-lucide:briefcase-business', to: 'projects' },
-  { id: 'about', label: 'About', icon: 'i-lucide:user-circle', to: 'about' },
+  { id: 'about', label: 'About', icon: 'i-lucide:circle-user-round', to: 'about' },
 ]
 
 const actions = [
-  { id: 'email', label: 'Copy Email', icon: 'i-lucide:copy', copy: true },
+  { id: 'email', label: 'Copy Email', icon: 'i-lucide:copy-check', copy: true },
   { id: 'resume', label: 'Get Resume', icon: 'i-lucide:file-down', href: '/XavierHM-CV-EN.pdf' },
   { id: 'linkedin', label: 'LinkedIn', icon: 'i-lucide:arrow-up-right', href: 'https://www.linkedin.com/in/xavhm/' },
   { id: 'github', label: 'Github', icon: 'i-lucide:arrow-up-right', href: 'https://github.com/xavhm' },
