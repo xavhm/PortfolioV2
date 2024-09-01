@@ -40,6 +40,13 @@
               size="16px"
             />
           </NuxtLink>
+          <div
+            v-else
+            class="private_repo"
+            title="Private Repository"
+          >
+            Proprietary Repo.
+          </div>
           <NuxtLink
             v-if="project.url"
             class="socials_btn"
@@ -106,5 +113,9 @@ const { projects } = useProjectsList()
 
   .pill {
     @apply bg-white dark:bg-slate-700 dark:text-slate-100 rounded-md border border-dashed border-slate-300 dark:border-slate-600 px-2 text-sm;
+  }
+
+  .private_repo {
+    @apply flex items-center text-xs p-1 bg-orange-50 dark:bg-slate-800 rounded-md border border border-orange-200 dark:border-orange-600/30;
   }
 </style>
