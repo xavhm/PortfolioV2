@@ -13,10 +13,10 @@
       aria-hidden="true"
     >
       Copied!
-      <span class="inline-block ml-2">
+      <span class="inline-block ml-4">
         <Icon
           class="relative top-[2px]"
-          name="i-lucide:mail-open"
+          name="i-lucide:copy-check"
           :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
           size="16px"
         />
@@ -30,7 +30,7 @@
       <span class="inline-block ml-2">
         <Icon
           class="relative top-[2px]"
-          name="i-lucide:copy-check"
+          name="i-lucide:copy"
           :color="$colorMode.value === 'dark' ? '#FFF' : '#000'"
           size="16px"
         />

@@ -4,7 +4,7 @@
     aria-label="my career path"
   >
     <div class="w-full flex items-start justify-between mb-6">
-      <h3 class="font-semibold mb-6 gradient_text">
+      <h3 class="font-semibold text-slate-500 dark:text-slate-400 mb-6">
         Career
       </h3>
       <NuxtLink
@@ -29,29 +29,26 @@
       class="w-full grid sm:grid-cols-[200px_1fr] gap-2 mb-10"
       :aria-label="`${job.label} at ${job.society}`"
     >
-      <div class="flex flex-col items-start gap-1">
-        <div class="border border-slate-200 dark:border-slate-600 p-1 rounded-md mb-2">
-          <NuxtPicture
-            :src="job.logo"
-            quality="90"
-            height="40"
-            width="40"
-            alt="Raccourci Agency Logo"
-            placeholder
-            :title="job.society"
-          />
-        </div>
-        <p class="text-sm">
+      <div class="text-sm flex flex-col items-start gap-1 leading-6">
+        <p>
           {{ job.from }} - {{ job.to }}
         </p>
-        <p class="text-sm">
+        <p class="italic">
           {{ job.location }}
         </p>
       </div>
 
-      <div class="leading-6 text-sm flex flex-col items-start gap-1">
-        <p class="font-semibold">
-          {{ job.label }} @{{ job.society }}
+      <div class="text-sm flex flex-col items-start gap-1 leading-6">
+        <p class="font-medium">
+          {{ job.label }}
+          <span class="font-semibold cursor-pointer">
+            <NuxtLink
+              class="outline-none focus-visible:underline underline-offset-4 decoration-slate-800 dark:decoration-slate-400 focus-visible:outline-none"
+              :to="job.url"
+              target="_blank"
+            >@{{ job.society }}
+            </NuxtLink>
+          </span>
         </p>
         <p
           v-for="(content, index) in job.contents"

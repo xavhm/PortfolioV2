@@ -3,12 +3,13 @@
     class="w-full mt-16"
     aria-label="links to the projects gallery"
   >
-    <h3 class="font-semibold mb-6 gradient_text">
+    <h3 class="font-semibold text-slate-500 dark:text-slate-400 mb-6">
       Projects
     </h3>
     <NuxtLink
       v-for="project in projects"
       :key="project.id"
+      class="outline-none focus-visible:underline underline-offset-4 decoration-slate-800 dark:decoration-slate-400 focus-visible:outline-none"
       :to="`projects#${project.id}`"
       :aria-label="`Learn more about ${project.name} project`"
     >

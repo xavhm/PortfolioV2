@@ -1,7 +1,7 @@
 <template>
   <section
     aria-label="socials"
-    class="flex items-center justify-start gap-2 mt-8"
+    class="flex items-center justify-start gap-2 mt-6"
   >
     <MailButton />
     <NuxtLink
