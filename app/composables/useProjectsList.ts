@@ -46,8 +46,8 @@ export default function useProjectList() {
       url: 'https://terres-de-seine.youbook.travel/fr',
       repository: null,
       details: 'An e-commerce platform for tourism professionals.',
-      description: 'E-commerce platform for tourism professionals, to sell sport and leisure activites.',
-      work: ['Prototyping', 'Bug Fixing', 'Web Components', 'Testing'],
+      description: 'E-commerce platform for tourism professionals for selling sport and leisure activites.',
+      work: ['Prototyping', 'Bug fixing', 'Web Components', 'Testing'],
     },
     {
       name: 'FairGUEST',
@@ -70,7 +70,7 @@ export default function useProjectList() {
       url: 'https://roadbook.travel/',
       repository: null,
       details: 'Tourism offices recommandations for travellers.',
-      description: 'The recommendations from tourist offices are compiled into a personalized web application and sent to the traveler by email or SMS immediately after the exchange.',
+      description: 'The recommendations from tourist offices are compiled live into a personalized bookmarks list and sent to the traveler by email or SMS immediately after.',
       work: ['UI/UX Rework', 'Features development', 'Bug fixing', 'Transition from Vue2 to Vue3', 'Transition from VueX to Pinia'],
     },
   ]
