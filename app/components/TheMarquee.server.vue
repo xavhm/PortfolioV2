@@ -6,7 +6,7 @@
     <h3 class="font-semibold text-slate-500 dark:text-slate-400 mb-6">
       Tech Stack
     </h3>
-    <div class="flex items-center justify-center md:justify-between gap-2 flex-wrap">
+    <div class="flex items-center justify-center gap-2 flex-wrap">
       <article
         v-for="logo in logos"
         :key="logo.id"
@@ -23,6 +23,12 @@
 </template>
 
 <script setup lang='ts'>
+import DenoLogo from '@/components/svg/DenoLogo.vue'
+import CloudflareLogo from '@/components/svg/CloudflareLogo.vue'
+import PlaywrightLogo from '@/components/svg/PlaywrightLogo.vue'
+import FigmaLogo from '@/components/svg/FigmaLogo.vue'
+import PostgreSQLogo from '@/components/svg/PostgreSQLogo.vue'
+
 import TypescriptLogo from '@/components/svg/TypescriptLogo.vue'
 import NodeLogo from '@/components/svg/NodeLogo.vue'
 import ViteLogo from '@/components/svg/ViteLogo.vue'
@@ -46,9 +52,14 @@ const logos = [
   { id: 7, label: 'Nuxt', component: NuxtLogo },
   { id: 8, label: 'React', component: ReactLogo },
   { id: 9, label: 'Web Components', component: WebcomponentsLogo },
+  { id: 16, label: 'Deno', component: DenoLogo },
+  { id: 17, label: 'PostgreSQL', component: PostgreSQLogo },
   { id: 10, label: 'Vitest', component: VitestLogo },
-  { id: 11, label: 'Storybook', component: StorybookLogo },
-  { id: 12, label: 'Docker', component: DockerLogo },
+  { id: 11, label: 'Playwright', component: PlaywrightLogo },
+  { id: 12, label: 'Storybook', component: StorybookLogo },
+  { id: 13, label: 'Docker', component: DockerLogo },
+  { id: 14, label: 'Cloudflare', component: CloudflareLogo },
+  { id: 15, label: 'Figma', component: FigmaLogo },
 ]
 </script>
 

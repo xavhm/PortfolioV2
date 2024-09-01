@@ -6,7 +6,7 @@ export default defineAppConfig({
     fallbackToApi: false,
   },
   ui: {
-    primary: 'violet',
+    primary: 'slate',
     gray: 'slate',
     link: {
       default: {

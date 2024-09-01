@@ -3,8 +3,8 @@ export default function useCareerContent() {
     {
       id: 1, label: 'Frontend Engineer', society: 'Raccourci Agency', url: 'https://www.raccourci.fr/', location: 'La Rochelle, France', from: 'Nov 2021', to: 'Now', logo: '/raccourci_logo.png',
       contents: [
-        'I developed features and user interfaces for multiple web applications, collaborating closely with designers, to translate prototypes into functional, pixel-perfect frontends.',
-        'Additionally, I built and maintained a reusable component library, enabling consistent UI across several applications and streamlining developer workflows. I also implemented accessibility features and best practices like WCAG and ARIA, to create inclusive user experiences.',
+        'I developed features and user interfaces for multiple web applications, collaborating closely with designers, to translate prototypes into functional frontends.',
+        'Additionally, I built and maintained a reusable components library, enabling consistent UI across several applications and streamlining developer workflows. I also implemented accessibility features and best practices like WCAG and ARIA, to create inclusive user experiences.',
       ],
     },
     {
@@ -24,7 +24,7 @@ export default function useCareerContent() {
       id: 4, label: 'LiveOPS Manager', society: 'Winamax', url: 'https://www.winamax.fr/', location: 'London and Paris', from: 'Aug 2009', to: 'Sep 2019', logo: '/wina_logo.png',
       contents: [
         'I worked 10 years on developing a comprehensive offering and events strategy for the online poker French market leader, keeping players engaged with the brand.',
-        'I collaborated with developers, designers, and marketers to deliver new gaming products and optimize metrics like participation rates, revenue impact, and retention.',
+        'I collaborated with developers, designers, and marketers to deliver new gaming products and optimize metrics like participation rates, revenue, and retention.',
       ],
     },
   ]

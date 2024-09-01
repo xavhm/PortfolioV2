@@ -22,7 +22,7 @@
         />
       </div>
       <div class="flex items-center justify-between text-sm py-2">
-        <h3 class="text-base font-semibold italic gradient_text">
+        <h3 class="text-base font-semibold italic">
           {{ project.name }}
         </h3>
         <div class="flex item-center gap-2">
@@ -105,6 +105,6 @@ const { projects } = useProjectsList()
   }
 
   .pill {
-    @apply bg-white dark:bg-slate-700 dark:text-slate-100 rounded-md border border-dashed border-violet-400 dark:border-slate-600 px-2 text-sm;
+    @apply bg-white dark:bg-slate-700 dark:text-slate-100 rounded-md border border-dashed border-slate-300 dark:border-slate-600 px-2 text-sm;
   }
 </style>
