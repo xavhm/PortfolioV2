@@ -116,6 +116,6 @@ const { projects } = useProjectsList()
   }
 
   .private_repo {
-    @apply flex items-center text-xs p-1 bg-orange-50 dark:bg-slate-800 rounded-md border border border-orange-200 dark:border-orange-600/30;
+    @apply flex items-center text-xs p-1 bg-orange-50 dark:bg-slate-800 rounded-md border border-orange-200 dark:border-orange-600/30;
   }
 </style>
