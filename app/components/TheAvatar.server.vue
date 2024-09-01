@@ -1,6 +1,6 @@
 <template>
   <section
-    class="mt-10"
+    class="mt-6 lg:mt-10"
     aria-label="profile description"
   >
     <p class="w-fit rounded-full overflow-hidden mb-6">
@@ -17,7 +17,7 @@
     <h1 class="w-fit text-xl font-semibold">
       Xavier Hernandez
     </h1>
-    <h2 class="font-medium text-slate-500 dark:text-slate-400">
+    <h2 class="font-medium text-slate-500 dark:text-slate">
       Frontend developer
     </h2>
   </section>

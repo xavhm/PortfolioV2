@@ -64,7 +64,10 @@
       </ul>
     </nav>
   </header>
-  <UModal v-model="isOpen">
+  <UModal
+    v-model="isOpen"
+    :ui="{ container: 'items-center' }"
+  >
     <CommandPalette
       v-if="isOpen"
       @close="isOpen = false"

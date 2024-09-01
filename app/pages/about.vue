@@ -1,6 +1,6 @@
 <template>
   <main class="text-slate-950 dark:text-slate-100 mb-16">
-    <div class="relative rounded-md overflow-hidden mb-10 entering">
+    <div class="relative rounded-md overflow-hidden mb-10 mt-10 lg:mt-4 entering">
       <NuxtPicture
         preload
         src="/midjourney_home.avif"

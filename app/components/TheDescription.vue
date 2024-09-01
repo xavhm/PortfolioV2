@@ -1,5 +1,5 @@
 <template>
-  <p class="text-sm leading-6 mt-8">
+  <p class="text-sm leading-6 mt-4 lg:mt-8">
     A web developer based in France, with a product background and user-centric mindset.
   </p>
   <p class="text-sm leading-6">

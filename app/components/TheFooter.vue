@@ -5,7 +5,7 @@
       <p>built with nuxt 💚</p>
     </div>
     <div class="w-full flex item-center justify-between my-2">
-      <div class="flex items-center gap-4">
+      <div class="flex items-center justify-start gap-1">
         <NavItem
           label="github"
           route="https://github.com/xavhm"
@@ -19,7 +19,7 @@
           route="https://x.com/_xavhm"
         />
       </div>
-      <p class="text-slate-500 dark:text-slate-400 pt-1">
+      <p class="w-fit text-right text-slate-500 dark:text-slate-400 pt-1">
         Out of complexity, find simplicity.
       </p>
     </div>

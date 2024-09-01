@@ -8,7 +8,7 @@
       :id="project.id"
       :key="project.name"
       :aria-label="project.name"
-      class="border-b border-dashed border-slate-200 dark:border-slate-700 p-2 pb-4 mb-8"
+      class="border-b border-dashed border-slate-200 dark:border-slate-700 pb-4 mb-8"
     >
       <div class="relative rounded-md overflow-hidden entering">
         <NuxtPicture
