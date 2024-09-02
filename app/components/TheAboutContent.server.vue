@@ -15,7 +15,7 @@
       I aim to create engaging user experiences that bridge the gap between design and functionality, ultimately reaching proficency in crafting digital products.
     </p>
     <p class="last_paragraph">
-      On the technical side, I aspire to master fullstack development, delving into server-side technologies like Deno, Go or Rust, and exploring web innovations such as WebAssembly.
+      On the technical side, I aspire to master fullstack development, delving into server-side technologies like Node, Go or Rust, and exploring web innovations such as WebAssembly.
     </p>
 
     <h3 class="title">
