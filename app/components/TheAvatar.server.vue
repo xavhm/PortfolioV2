@@ -17,7 +17,7 @@
     <h1 class="w-fit text-xl font-semibold">
       Xavier Hernandez
     </h1>
-    <h2 class="font-medium text-slate-500 dark:text-slate">
+    <h2 class="font-medium text-slate-500 dark:text-slate-400">
       Frontend developer
     </h2>
   </section>

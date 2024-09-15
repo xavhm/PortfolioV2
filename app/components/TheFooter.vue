@@ -1,6 +1,6 @@
 <template>
   <footer class="flex flex-col items-center justify-between text-sm my-8">
-    <div class="w-full flex items-center justify-between">
+    <div class="w-full flex items-center justify-between dark:text-slate-400">
       <p><span class="text-xs">&copy; {{ year }}</span> Xavier Hernandez</p>
       <p class="font-semibold">
         built with nuxt 💚

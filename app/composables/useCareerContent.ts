@@ -4,7 +4,7 @@ export default function useCareerContent() {
       id: 1, label: 'Frontend Developer', society: 'Raccourci Agency', url: 'https://www.raccourci.fr/', location: 'La Rochelle, France', from: 'Nov 2021', to: 'Now', logo: '/raccourci_logo.png',
       contents: [
         'I worked on features and user interfaces for multiple web applications, collaborating closely with designers, to translate prototypes into functional frontends.',
-        'Additionally, I built and maintained a reusable components library, enabling consistent UI across several applications and streamlining developer workflows. I also implemented accessibility features and best practices like WCAG and ARIA, to create inclusive user experiences.',
+        'Additionally, I built and maintained a reusable components library, enabling consistent UI across several applications. I also implemented units and E2E test coverages, accessibility features and best practices like WCAG and ARIA, to create reliable and inclusive user experiences.',
       ],
     },
     {
